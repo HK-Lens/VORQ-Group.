@@ -5,7 +5,7 @@ This package reduces obvious legal gaps but does not remove legal risk. Before p
 1. Impressum / DDG provider information
    - Full legal name
    - Legal form (if company)
-   - Full postal address
+   - Full postal address: Konserthusgatan 18D, 578 31 Aneby, Sverige
    - Authorized representative
    - Email and, where needed, phone
    - Commercial register / registration court / registration number if applicable
@@ -25,4 +25,4 @@ This package reduces obvious legal gaps but does not remove legal risk. Before p
    - License checks for any regulated future services
 
 4. Country/law
-   - Confirm whether German law, Swedish-facing service rules, EU consumer law, vehicle marketplace rules, tax and business registration apply.
+   - Current contact address is in Sweden. Confirm Swedish law, Swedish-facing service rules, EU consumer law, vehicle marketplace rules, tax and business registration requirements before launch.

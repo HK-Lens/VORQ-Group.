@@ -1,0 +1,28 @@
+LEGAL TODO FOR VORQ GROUP
+
+This package reduces obvious legal gaps but does not remove legal risk. Before public commercial launch, complete and verify:
+
+1. Impressum / DDG provider information
+   - Full legal name
+   - Legal form (if company)
+   - Full postal address
+   - Authorized representative
+   - Email and, where needed, phone
+   - Commercial register / registration court / registration number if applicable
+   - VAT ID if applicable
+   - Supervisory authority if regulated
+
+2. Data protection
+   - Hosting provider
+   - Email provider
+   - Any analytics, cookies, forms, CRM, newsletter, ads, login, payment
+   - Data retention periods
+   - Data processing agreements with providers
+
+3. Brand/license
+   - Trademark search for VORQ Group and VORQ Fordon
+   - Registration or proof of use strategy
+   - License checks for any regulated future services
+
+4. Country/law
+   - Confirm whether German law, Swedish-facing service rules, EU consumer law, vehicle marketplace rules, tax and business registration apply.

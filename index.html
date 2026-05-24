@@ -284,6 +284,32 @@
         .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
         .footer strong { color: var(--navy); }
 
+
+
+        .notice-legal {
+            margin-top: 22px;
+            padding: 16px 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(245, 130, 32, 0.34);
+            background: rgba(255, 247, 237, 0.92);
+            color: #7c3a0a;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .notice-legal strong { color: #8a3d08; }
+        .legal-strip {
+            padding: 18px 0;
+            background: #fff7ed;
+            border-top: 1px solid #fed7aa;
+            border-bottom: 1px solid #fed7aa;
+            color: #7c3a0a;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .legal-strip a { color: var(--navy); font-weight: 950; text-decoration: underline; }
+        .legal-links { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; }
+        .legal-links a { color: var(--navy); font-weight: 900; }
+
         @media (max-width: 980px) {
             .header-inner { align-items: flex-start; flex-direction: column; padding: 14px 0; }
             .nav { flex-wrap: wrap; }
@@ -317,6 +343,8 @@
                 <a href="#about">Om oss</a>
                 <a href="#values">Värden</a>
                 <a href="#brands">Projekt</a>
+                <a href="legal.html">Juridik</a>
+                <a href="privacy.html">Dataskydd</a>
                 <a class="contact-small" href="mailto:info@vorq.group">info@vorq.group</a>
             </nav>
         </div>
@@ -332,6 +360,11 @@
                         VORQ Group är huvudnamnet bakom digitala webbplatser, appar och tjänster.
                         Varumärket samlar idéer, drift, räckvidd och kvalitet under en tydlig identitet.
                     </p>
+                    <div class="notice-legal">
+                        <strong>Juridisk status:</strong> VORQ Group används tills vidare som projekt- och paraplyvarumärke under etablering.
+                        Denna webbplats erbjuder inte licenspliktiga tjänster, juridisk rådgivning, finansiell rådgivning eller direkt försäljning.
+                        Fullständiga bolags-, licens- och registreringsuppgifter kompletteras innan kommersiell lansering.
+                    </div>
                     <div class="hero-actions">
                         <a class="btn btn-primary" href="#brands">Se våra projekt</a>
                         <a class="btn btn-secondary" href="mailto:info@vorq.group">Kontakta oss</a>
@@ -460,10 +493,21 @@
         </section>
     </main>
 
+    <div class="legal-strip">
+        <div class="container">
+            VORQ Group arbetar med tydliga juridiska villkor: <a href="legal.html">äganderätt, ansvarsfriskrivning och tillämplig lag</a>, <a href="privacy.html">dataskydd</a>, <a href="terms.html">användarvillkor</a> och <a href="cookie-policy.html">cookies/teknisk lagring</a>.
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container footer-inner">
             <p><strong>© 2026 VORQ Group.</strong> Alla rättigheter förbehållna.</p>
-            <p>Vision • Operations • Reach • Quality</p>
+            <div class="legal-links">
+                <a href="legal.html">Juridisk information</a>
+                <a href="privacy.html">Dataskydd</a>
+                <a href="terms.html">Villkor</a>
+                <a href="cookie-policy.html">Cookies</a>
+            </div>
         </div>
     </footer>
 </body>

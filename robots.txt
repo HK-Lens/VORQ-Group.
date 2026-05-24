@@ -1,2 +1,9 @@
 User-agent: *
 Allow: /
+
+# Legal pages
+Allow: /impressum.html
+Allow: /legal.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /cookie-policy.html

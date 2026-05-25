@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://hk-lens.github.io/VORQ/index.html</loc></url>
-  <url><loc>https://hk-lens.github.io/VORQ/impressum.html</loc></url>
-  <url><loc>https://hk-lens.github.io/VORQ/legal.html</loc></url>
-  <url><loc>https://hk-lens.github.io/VORQ/privacy.html</loc></url>
-  <url><loc>https://hk-lens.github.io/VORQ/terms.html</loc></url>
-  <url><loc>https://hk-lens.github.io/VORQ/cookie-policy.html</loc></url>
+  <url><loc>./index.html</loc></url>
+  <url><loc>./impressum.html</loc></url>
+  <url><loc>./legal.html</loc></url>
+  <url><loc>./privacy.html</loc></url>
+  <url><loc>./terms.html</loc></url>
+  <url><loc>./cookie-policy.html</loc></url>
+  <url><loc>./notice-action.html</loc></url>
 </urlset>

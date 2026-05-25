@@ -1,13 +1,9 @@
 Upload instructions for GitHub Pages
 
 1) Extract the ZIP.
-2) Upload the CONTENTS of the folder to the ROOT of your repository.
-   Important: index.html must sit directly in the repository root.
-3) In GitHub -> Settings -> Pages:
-   - Source: Deploy from a branch
-   - Branch: main (or the branch you use)
-   - Folder: /(root)
-4) Wait 1-3 minutes, then open the site again.
-5) If your phone shows an old version, open in incognito or refresh with cache cleared.
+2) Upload the CONTENTS of this folder to the ROOT of your repository.
+3) index.html must be directly in the repository root.
+4) GitHub -> Settings -> Pages -> Deploy from a branch -> main -> /(root).
+5) Wait a few minutes, then clear cache or open in incognito if an old version appears.
 
-This package uses relative links plus a dynamic base-path fix for GitHub Pages project URLs.
+This package uses relative links and a GitHub Pages base-path fix.

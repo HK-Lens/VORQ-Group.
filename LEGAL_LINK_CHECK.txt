@@ -1,0 +1,4 @@
+FINAL PROJECT CHECK
+Missing local HTML links: None
+Phone/tel/contact-pill in top header: None
+Phone appears in body contact/company information by design: index.html, impressum.html

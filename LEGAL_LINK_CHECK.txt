@@ -1,4 +1,10 @@
-FINAL PROJECT CHECK
-Missing local HTML links: None
-Phone/tel/contact-pill in top header: None
-Phone appears in body contact/company information by design: index.html, impressum.html
+Internal HTML link issues: index.html: missing '+b+'
+projects.html: missing '+b+'
+impressum.html: missing '+b+'
+legal.html: missing '+b+'
+privacy.html: missing '+b+'
+terms.html: missing '+b+'
+cookie-policy.html: missing '+b+'
+notice-action.html: missing '+b+'
+404.html: missing '+b+'
+Phone in header: none

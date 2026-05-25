@@ -1,28 +1,11 @@
 
 (function(){
-  var allowed={de:1,sv:1,en:1};
-  var lang='de';
-  try{ lang=localStorage.getItem('vorqLang') || document.documentElement.getAttribute('data-lang') || 'de'; }catch(e){}
-  if(!allowed[lang]) lang='de';
-  function apply(){
-    document.documentElement.setAttribute('data-lang', lang);
-    document.documentElement.setAttribute('lang', lang);
-    document.querySelectorAll('.lang-btn').forEach(function(btn){
-      var active=btn.getAttribute('data-lang')===lang;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-pressed', active ? 'true':'false');
-    });
-  }
-  document.addEventListener('click', function(e){
-    var b=e.target.closest('.lang-btn'); if(!b) return;
-    lang=b.getAttribute('data-lang') || 'de';
-    if(!allowed[lang]) lang='de';
-    try{ localStorage.setItem('vorqLang', lang); }catch(err){}
-    apply();
-  });
-  if(location.hostname.endsWith('github.io') && !document.querySelector('base')){
-    var p=location.pathname.split('/').filter(Boolean); var b=p.length?('/'+p[0]+'/'):'/';
-    var base=document.createElement('base'); base.href=b; document.head.prepend(base);
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', apply); else apply();
+  const root=document.documentElement;
+  const allowed=['de','sv','en'];
+  function getInitial(){try{const saved=localStorage.getItem('vorqLang');if(allowed.includes(saved))return saved;}catch(e){} const nav=(navigator.language||'en').slice(0,2).toLowerCase(); return allowed.includes(nav)?nav:'de';}
+  function setLang(lang){ if(!allowed.includes(lang)) lang='de'; root.setAttribute('data-lang',lang); root.lang=lang; try{localStorage.setItem('vorqLang',lang)}catch(e){} document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang); b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false');}); }
+  setLang(root.getAttribute('data-lang') || getInitial());
+  document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.lang)));
+  const menu=document.querySelector('.menu-btn'), nav=document.querySelector('.nav');
+  if(menu&&nav){menu.addEventListener('click',()=>{nav.classList.toggle('open');menu.setAttribute('aria-expanded',nav.classList.contains('open')?'true':'false')});}
 })();

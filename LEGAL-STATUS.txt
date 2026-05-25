@@ -1,0 +1,18 @@
+VORQ Group - Official German-address website package
+
+This package contains the official VORQ Group parent website files in German/Swedish/English legal structure.
+
+Operator: Haitham Kojar
+Legal form: nicht eingetragenes gewerbliches Einzelunternehmen
+Business designation: VORQ Group
+Address: Ziegelstraße 26, 42289 Wuppertal, Deutschland
+Phone: +49 178 3705133
+Phone hours: Monday-Friday, 10:00-13:00 CET
+Email: info@vorq.group
+Activity: IT-Dienstleistungen, Webdesign, Webentwicklung, IT-Dienstleistungen und Betrieb von Internetportalen
+Tax status text: Kleinunternehmer gemäß § 19 UStG
+
+Hosting provider currently written in privacy/cookie pages: GitHub Pages / GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA
+If the site is deployed somewhere else, replace the provider name before publication.
+
+Legal-sandbox strategy: this parent site is only the VORQ Group company/brand information site. Interactive projects such as VORQ Fordon must have their own Impressum, Terms, Privacy, Cookie Policy, notice/reporting workflow and payment/withdrawal rules where applicable.

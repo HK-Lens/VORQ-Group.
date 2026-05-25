@@ -1,2 +1,0 @@
-Internal HTML link issues: none
-Phone in header: none

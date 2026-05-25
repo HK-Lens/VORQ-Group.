@@ -3,49 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>(function(){var lang='de';try{lang=localStorage.getItem('vorqLang')||'de';}catch(e){}document.documentElement.setAttribute('data-lang',lang);document.documentElement.lang=lang;if(location.hostname.endsWith('github.io')){var p=location.pathname.split('/').filter(Boolean);var b=p.length?('/'+p[0]+'/'):'/';document.write('<base href="'+b+'">');}})();</script>
-  <title>404 | VORQ Group</title>
-  <meta name="description" content="Page not found">
+  <script>
+    (function () {
+      var lang = "de";
+      try { lang = localStorage.getItem("vorqLang") || "de"; } catch (e) {}
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.lang = lang;
+      if (location.hostname.endsWith("github.io")) {
+        var parts = location.pathname.split("/").filter(Boolean);
+        var base = parts.length ? ("/" + parts[0] + "/") : "/";
+        document.write('<base href="' + base + '">');
+      }
+    })();
+  </script>
+  <title>404 | VORQ Digital</title>
+  <meta name="description" content="The requested page could not be found on VORQ Digital.">
+  <meta name="robots" content="noindex, follow">
   <meta name="theme-color" content="#0A2342">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    :root{--vd-blue:#0A2342;--vd-ink:#172033;--vd-muted:#64748b;--vd-bg:#f6f8fb;--vd-card:#fff;--vd-line:#e5eaf1;--vd-radius:22px;}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--vd-bg);color:var(--vd-ink);}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}.skip:focus{left:20px;top:18px;width:auto;height:auto;background:#fff;padding:10px 14px;border-radius:10px;z-index:20}
+    .container{width:min(1120px,calc(100% - 32px));margin-inline:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--vd-line)}
+    .header-inner{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--vd-blue);font-weight:800;letter-spacing:-.02em}
+    .brand-mark{width:38px;height:38px;border-radius:12px;background:var(--vd-blue);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:800}.brand-copy{display:flex;flex-direction:column;line-height:1.05}.brand-title{font-size:18px}.brand-sub{font-size:11px;color:var(--vd-muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+    .nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.nav a,.footer-links a{color:var(--vd-ink);text-decoration:none;font-size:14px;font-weight:650;padding:9px 10px;border-radius:999px}.nav a:hover,.nav a.active{background:#eef3f8;color:var(--vd-blue)}
+    .header-tools{display:flex;align-items:center;gap:10px}.lang-switch{display:flex;gap:4px;background:#eef3f8;padding:4px;border-radius:999px}.lang-btn{border:0;background:transparent;border-radius:999px;padding:6px 8px;cursor:pointer;font-weight:750;color:var(--vd-muted)}
+    html[data-lang="de"] .lang-btn[data-lang="de"],html[data-lang="sv"] .lang-btn[data-lang="sv"],html[data-lang="en"] .lang-btn[data-lang="en"]{background:#fff;color:var(--vd-blue);box-shadow:0 1px 6px rgba(10,35,66,.10)}.menu-btn{display:none;border:1px solid var(--vd-line);background:#fff;border-radius:999px;padding:8px 12px;font-weight:700;color:var(--vd-blue)}
+    .page-hero{padding:74px 0 62px}.page-card{background:var(--vd-card);border:1px solid var(--vd-line);border-radius:var(--vd-radius);box-shadow:0 24px 70px rgba(10,35,66,.08);padding:clamp(28px,5vw,54px);max-width:860px;margin-inline:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#f4efe3;color:#6d5320;border:1px solid #eadcb8;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;margin-bottom:18px}h1{font-size:clamp(34px,6vw,58px);line-height:.98;margin:0 0 16px;color:var(--vd-blue);letter-spacing:-.045em}.lead{font-size:clamp(16px,2.2vw,19px);line-height:1.65;color:var(--vd-muted);max-width:680px;margin:0 0 26px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 18px;font-weight:800;border:1px solid transparent}.btn-primary{background:var(--vd-blue);color:#fff}.btn-secondary{background:#fff;color:var(--vd-blue);border-color:var(--vd-line)}
+    .visitor-note{margin-top:24px;border-top:1px solid var(--vd-line);padding-top:18px;color:var(--vd-muted);font-size:14px;line-height:1.6}.footer{border-top:1px solid var(--vd-line);background:#fff;padding:34px 0}.footer-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:22px;align-items:start}.footer p{color:var(--vd-muted);line-height:1.65;margin:12px 0 0;font-size:14px}.footer .small{font-size:12px}.footer-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.inline-lang,.lang{display:none}
+    html[data-lang="de"] .lang-de,html[data-lang="sv"] .lang-sv,html[data-lang="en"] .lang-en{display:initial}html[data-lang="de"] div.lang-de,html[data-lang="sv"] div.lang-sv,html[data-lang="en"] div.lang-en{display:block}
+    @media (max-width:860px){.header-inner{align-items:flex-start;padding:12px 0;flex-direction:column}.nav{display:none;width:100%;padding-top:8px;border-top:1px solid var(--vd-line)}.nav.open{display:flex}.header-tools{width:100%;justify-content:space-between}.menu-btn{display:inline-flex}.footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.brand-sub{display:none}}
+  
+    .brand-logo{height:42px;width:auto;display:block}
+    @media (max-width:860px){.brand-logo{height:38px}}
+  </style>
 </head>
 <body>
-<a href="#main" class="skip">Skip to content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="VORQ Group home">
-      <img src="vorq-group-logo.svg" alt="VORQ Group">
-      <span class="brand-mini">VQ</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation"><a class="active" href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a>
-<a class="" href="projects.html"><span class="inline-lang lang-de">Projekte</span><span class="inline-lang lang-sv">Projekt</span><span class="inline-lang lang-en">Projects</span></a>
-<a class="" href="impressum.html">Impressum</a>
-<a class="" href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a>
-<a class="" href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a></nav>
-    <div class="header-tools">
-      <div class="lang-switch" aria-label="Language switcher"><button class="lang-btn" data-lang="de">DE</button><button class="lang-btn" data-lang="sv">SV</button><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
-    </div>
-  </div>
-</header>
-<main id="main">
-<section class="page-hero"><div class="container"><div class="card page-card"><img class="logo-hero" src="vorq-group-logo.svg" alt="VORQ Group logo"><div class="lang lang-de"><div class="badge">404</div><h1>Seite nicht gefunden</h1><p class="lead">Die gesuchte Seite wurde nicht gefunden. Bitte öffnen Sie die Startseite oder die Projektübersicht.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Startseite</a><a class="btn btn-secondary" href="projects.html">Projekte</a></div></div><div class="lang lang-sv"><div class="badge">404</div><h1>Sidan hittades inte</h1><p class="lead">Sidan kunde inte hittas. Öppna startsidan eller projektöversikten.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Start</a><a class="btn btn-secondary" href="projects.html">Projekt</a></div></div><div class="lang lang-en"><div class="badge">404</div><h1>Page not found</h1><p class="lead">The requested page could not be found. Please open the home page or project overview.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Home</a><a class="btn btn-secondary" href="projects.html">Projects</a></div></div></div></div></section>
-</main>
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <a class="brand" href="index.html"><img src="vorq-group-logo.svg" alt="VORQ Group"></a>
-      <p><span class="lang lang-de">VORQ Group ist die Dachmarke und Unternehmenswebsite für digitale Projekte, geführt unter dem deutschen Einzelunternehmen von Haitham Kojar.</span><span class="lang lang-sv">VORQ Group är paraplyvarumärket och företagswebbplatsen för digitala projekt, drivet under Haitham Kojars tyska enskilda näringsverksamhet.</span><span class="lang lang-en">VORQ Group is the umbrella brand and company website for digital projects, operated under the German sole proprietorship of Haitham Kojar.</span></p>
-      <p class="small">© 2026 VORQ Group • Vision • Operations • Reach • Quality</p>
-    </div>
-    <div class="footer-links">
-      <a href="projects.html">Projects</a><a href="impressum.html">Impressum</a><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookies</a><a href="notice-action.html">Notice</a>
-    </div>
-  </div>
-</footer>
+<a href="#main" class="skip"><span class="inline-lang lang-de">Zum Inhalt springen</span><span class="inline-lang lang-sv">Hoppa till innehåll</span><span class="inline-lang lang-en">Skip to content</span></a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="VORQ Digital home"><img class="brand-logo" src="vorq-digital-logo.svg" alt="VORQ Digital"></a><nav class="nav" aria-label="Primary navigation"><a href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a><a href="projects.html"><span class="inline-lang lang-de">Projekte</span><span class="inline-lang lang-sv">Projekt</span><span class="inline-lang lang-en">Projects</span></a><a href="impressum.html">Impressum</a><a href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a><a href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a></nav><div class="header-tools"><div class="lang-switch" aria-label="Language switcher"><button class="lang-btn" type="button" data-lang="de">DE</button><button class="lang-btn" type="button" data-lang="sv">SV</button><button class="lang-btn" type="button" data-lang="en">EN</button></div><button class="menu-btn" type="button" aria-expanded="false" aria-label="Open menu"><span class="inline-lang lang-de">Menü</span><span class="inline-lang lang-sv">Meny</span><span class="inline-lang lang-en">Menu</span></button></div></div></header>
+<main id="main"><section class="page-hero"><div class="container"><div class="page-card"><div class="lang lang-de"><div class="eyebrow">404 • Seite nicht gefunden</div><h1>Diese Seite ist nicht verfügbar.</h1><p class="lead">Die gesuchte Adresse existiert nicht mehr, wurde verschoben oder ist vorübergehend nicht erreichbar. Bitte nutzen Sie die Startseite, die Projektübersicht oder die rechtlichen Informationen.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Startseite öffnen</a><a class="btn btn-secondary" href="projects.html">Projekte ansehen</a><a class="btn btn-secondary" href="impressum.html">Impressum</a></div><p class="visitor-note">VORQ Digital ist die Geschäftsbezeichnung und Unternehmenswebsite für digitale Projekte, betrieben von Haitham Kojar als nicht eingetragenes gewerbliches Einzelunternehmen in Deutschland.</p></div><div class="lang lang-sv"><div class="eyebrow">404 • Sidan hittades inte</div><h1>Den här sidan är inte tillgänglig.</h1><p class="lead">Adressen finns inte längre, har flyttats eller är tillfälligt otillgänglig. Använd startsidan, projektöversikten eller den juridiska informationen.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Öppna startsidan</a><a class="btn btn-secondary" href="projects.html">Visa projekt</a><a class="btn btn-secondary" href="impressum.html">Företagsinformation</a></div><p class="visitor-note">VORQ Digital är verksamhetsnamnet och företagswebbplatsen för digitala projekt, driven av Haitham Kojar som en icke handelsregisterregistrerad enskild näringsverksamhet i Tyskland.</p></div><div class="lang lang-en"><div class="eyebrow">404 • Page not found</div><h1>This page is not available.</h1><p class="lead">The requested address no longer exists, has moved, or is temporarily unavailable. Please use the home page, project overview or legal information.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Open home page</a><a class="btn btn-secondary" href="projects.html">View projects</a><a class="btn btn-secondary" href="impressum.html">Impressum</a></div><p class="visitor-note">VORQ Digital is the business name and company website for digital projects operated by Haitham Kojar as a non-registered commercial sole proprietorship in Germany.</p></div></div></div></section></main>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html" aria-label="VORQ Digital home"><img class="brand-logo" src="vorq-digital-logo.svg" alt="VORQ Digital"></a><p><span class="lang lang-de">VORQ Digital ist eine Geschäftsbezeichnung von Haitham Kojar. Rechtliche Angaben, Kontaktinformationen und Verantwortlichkeit finden Sie im Impressum.</span><span class="lang lang-sv">VORQ Digital är ett verksamhetsnamn som används av Haitham Kojar. Juridiska uppgifter, kontaktinformation och ansvar finns i företagsinformationen.</span><span class="lang lang-en">VORQ Digital is a business name used by Haitham Kojar. Legal details, contact information and responsibility are provided in the Impressum.</span></p><p class="small">© 2026 Haitham Kojar – VORQ Digital</p></div><div class="footer-links"><a href="projects.html">Projects</a><a href="impressum.html">Impressum</a><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookies</a></div></div></footer>
+<script>(function(){var buttons=document.querySelectorAll(".lang-btn");buttons.forEach(function(button){button.addEventListener("click",function(){var lang=button.getAttribute("data-lang")||"de";try{localStorage.setItem("vorqLang",lang)}catch(e){}document.documentElement.setAttribute("data-lang",lang);document.documentElement.lang=lang;});});var menuButton=document.querySelector(".menu-btn");var nav=document.querySelector(".nav");if(menuButton&&nav){menuButton.addEventListener("click",function(){var open=nav.classList.toggle("open");menuButton.setAttribute("aria-expanded",open?"true":"false");});}})();</script>
 <script src="assets/script.js" defer></script>
-</body></html>
+</body>
+</html>

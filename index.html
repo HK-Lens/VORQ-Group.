@@ -3,74 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>(function(){var lang='de';try{lang=localStorage.getItem('vorqLang')||'de';}catch(e){}document.documentElement.setAttribute('data-lang',lang);document.documentElement.lang=lang;if(location.hostname.endsWith('github.io')){var p=location.pathname.split('/').filter(Boolean);var b=p.length?('/'+p[0]+'/'):'/';document.write('<base href="'+b+'">');}})();</script>
-  <title>VORQ Group | Company &amp; Digital Project Portfolio</title>
-  <meta name="description" content="Official VORQ Group website: umbrella brand for VORQ Fordon, VORQ Blog, VORQ Marknad and other digital projects.">
+  <script>
+    (function () {
+      var lang = "de";
+      try { lang = localStorage.getItem("vorqLang") || "de"; } catch (e) {}
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.lang = lang;
+      if (location.hostname.endsWith("github.io")) {
+        var parts = location.pathname.split("/").filter(Boolean);
+        var base = parts.length ? ("/" + parts[0] + "/") : "/";
+        document.write('<base href="' + base + '">');
+      }
+    })();
+  </script>
+  <title>VORQ Digital | Digitale Projekte, Web & IT</title>
+  <meta name="description" content="Offizielle Website von VORQ Digital, der Geschäftsbezeichnung von Haitham Kojar für digitale Projekte, Webentwicklung, Internetportale und IT-Dienstleistungen.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0A2342">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    :root{
+      --vd-blue:#0A2342;
+      --vd-blue-2:#123B63;
+      --vd-ink:#162033;
+      --vd-muted:#64748b;
+      --vd-bg:#f5f7fb;
+      --vd-card:#ffffff;
+      --vd-line:#e3e9f1;
+      --vd-soft:#eef3f8;
+      --vd-gold:#b88732;
+      --vd-green:#167a54;
+      --vd-orange:#b45309;
+      --vd-radius:22px;
+      --vd-shadow:0 20px 65px rgba(10,35,66,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--vd-bg);color:var(--vd-ink);}
+    a{color:inherit}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}.skip:focus{left:20px;top:18px;width:auto;height:auto;background:#fff;padding:10px 14px;border-radius:10px;z-index:30;border:1px solid var(--vd-line)}
+    .container{width:min(1140px,calc(100% - 32px));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--vd-line)}
+    .header-inner{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:inline-flex;align-items:center;text-decoration:none;color:var(--vd-blue);font-weight:800;min-width:max-content}
+    .brand-logo{width:168px;height:auto;display:block}
+    .nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+    .nav a,.footer-links a{color:var(--vd-ink);text-decoration:none;font-size:14px;font-weight:700;padding:9px 11px;border-radius:999px;transition:.18s ease}
+    .nav a:hover,.nav a.active,.footer-links a:hover{background:var(--vd-soft);color:var(--vd-blue)}
+    .header-tools{display:flex;align-items:center;gap:10px}
+    .lang-switch{display:flex;gap:4px;background:var(--vd-soft);padding:4px;border-radius:999px}.lang-btn{border:0;background:transparent;border-radius:999px;padding:6px 8px;cursor:pointer;font-weight:800;color:var(--vd-muted)}
+    html[data-lang="de"] .lang-btn[data-lang="de"],html[data-lang="sv"] .lang-btn[data-lang="sv"],html[data-lang="en"] .lang-btn[data-lang="en"]{background:#fff;color:var(--vd-blue);box-shadow:0 1px 6px rgba(10,35,66,.10)}
+    .menu-btn{display:none;border:1px solid var(--vd-line);background:#fff;border-radius:999px;padding:8px 12px;font-weight:800;color:var(--vd-blue)}
+    .hero{padding:64px 0 34px}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:20px;align-items:stretch}
+    .card{background:var(--vd-card);border:1px solid var(--vd-line);border-radius:var(--vd-radius);box-shadow:var(--vd-shadow)}
+    .hero-card{padding:clamp(28px,5vw,56px);position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;inset:auto -80px -110px auto;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle,rgba(10,35,66,.10),transparent 68%)}
+    .hero-logo{width:min(250px,70vw);height:auto;margin-bottom:24px;position:relative;z-index:1}.badge,.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#f5efe2;color:#745421;border:1px solid #eadcbb;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:900;margin-bottom:18px}
+    h1{font-size:clamp(34px,5.8vw,62px);line-height:.98;margin:0 0 16px;color:var(--vd-blue);letter-spacing:-.05em;max-width:780px}.accent{color:var(--vd-gold)}
+    .lead{font-size:clamp(16px,2.1vw,20px);line-height:1.65;color:var(--vd-muted);max-width:760px;margin:0 0 26px}.cta-row{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 18px;font-weight:900;border:1px solid transparent;min-height:44px}.btn-primary{background:var(--vd-blue);color:#fff}.btn-primary:hover{background:var(--vd-blue-2)}.btn-secondary{background:#fff;color:var(--vd-blue);border-color:var(--vd-line)}.btn-secondary:hover{background:var(--vd-soft)}
+    .hero-side{padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}.hero-side h2,.content-card h3,.section-head h2{color:var(--vd-blue);margin:0 0 10px;letter-spacing:-.03em}.hero-side p,.content-card p,.section-head p,.project-card p{color:var(--vd-muted);line-height:1.65;margin:0}
+    .metric-grid{display:grid;grid-template-columns:1fr;gap:10px}.metric{background:var(--vd-soft);border:1px solid var(--vd-line);border-radius:17px;padding:14px}.metric strong{display:block;color:var(--vd-blue);font-size:18px}.metric span{display:block;color:var(--vd-muted);font-size:13px;margin-top:4px;line-height:1.35}
+    .section{padding:34px 0}.section-head{margin-bottom:20px;max-width:820px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project-card,.content-card,.company-box,.legal-note{padding:22px}.project-card{display:flex;flex-direction:column;gap:14px}.project-card h3{font-size:21px;color:var(--vd-blue);margin:0;letter-spacing:-.035em}.project-meta{display:flex;gap:7px;flex-wrap:wrap}.tag{display:inline-flex;align-items:center;border:1px solid var(--vd-line);background:var(--vd-soft);color:var(--vd-muted);font-size:12px;font-weight:900;border-radius:999px;padding:6px 9px}.status-live{background:#e9f8f1;color:var(--vd-green);border-color:#bce9d2}.status-beta{background:#fff4e6;color:var(--vd-orange);border-color:#f5d3a4}.project-actions{margin-top:auto}
+    .company-box{background:var(--vd-blue);color:#fff;border-radius:var(--vd-radius);box-shadow:0 22px 70px rgba(10,35,66,.16)}.company-box h2{margin:0 0 18px;color:#fff}.company-box dl{display:grid;grid-template-columns:minmax(130px,.38fr) 1fr;gap:10px 18px;margin:0}.company-box dt{color:#b9c9da;font-weight:800}.company-box dd{margin:0;color:#fff;line-height:1.55}.company-box a{color:#fff;text-underline-offset:3px}
+    .legal-note{background:#fff;border:1px solid var(--vd-line);border-radius:var(--vd-radius)}.legal-note h2{margin:0 0 10px;color:var(--vd-blue)}.legal-note p{color:var(--vd-muted);line-height:1.65;margin:0 0 12px}.legal-note a{font-weight:900;text-decoration:none;color:var(--vd-blue)}
+    .footer{border-top:1px solid var(--vd-line);background:#fff;padding:34px 0}.footer-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:22px;align-items:start}.footer p{color:var(--vd-muted);line-height:1.65;margin:12px 0 0;font-size:14px}.footer .small{font-size:12px}.footer-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+    .inline-lang,.lang{display:none}html[data-lang="de"] .lang-de,html[data-lang="sv"] .lang-sv,html[data-lang="en"] .lang-en{display:initial}html[data-lang="de"] div.lang-de,html[data-lang="sv"] div.lang-sv,html[data-lang="en"] div.lang-en{display:block}
+    @media (max-width:980px){.hero-grid,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}.hero{padding-top:34px}.brand-logo{width:150px}.company-box dl{grid-template-columns:1fr}.company-box dt{margin-top:8px}}
+    @media (max-width:860px){.header-inner{align-items:flex-start;padding:12px 0;flex-direction:column}.nav{display:none;width:100%;padding-top:8px;border-top:1px solid var(--vd-line)}.nav.open{display:flex}.header-tools{width:100%;justify-content:space-between}.menu-btn{display:inline-flex}.footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.hero-logo{width:210px}}
+  </style>
 </head>
 <body>
-<a href="#main" class="skip">Skip to content</a>
+<a href="#main" class="skip"><span class="inline-lang lang-de">Zum Inhalt springen</span><span class="inline-lang lang-sv">Hoppa till innehåll</span><span class="inline-lang lang-en">Skip to content</span></a>
+
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="VORQ Group home">
-      <img src="vorq-group-logo.svg" alt="VORQ Group">
-      <span class="brand-mini">VQ</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation"><a class="active" href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a>
-<a class="" href="projects.html"><span class="inline-lang lang-de">Projekte</span><span class="inline-lang lang-sv">Projekt</span><span class="inline-lang lang-en">Projects</span></a>
-<a class="" href="impressum.html">Impressum</a>
-<a class="" href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a>
-<a class="" href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a></nav>
+    <a class="brand" href="index.html" aria-label="VORQ Digital home"><img class="brand-logo" src="vorq-digital-logo.svg" alt="VORQ Digital"></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a>
+      <a href="projects.html"><span class="inline-lang lang-de">Projekte</span><span class="inline-lang lang-sv">Projekt</span><span class="inline-lang lang-en">Projects</span></a>
+      <a href="impressum.html">Impressum</a>
+      <a href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a>
+      <a href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a>
+    </nav>
     <div class="header-tools">
-      <div class="lang-switch" aria-label="Language switcher"><button class="lang-btn" data-lang="de">DE</button><button class="lang-btn" data-lang="sv">SV</button><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+      <div class="lang-switch" aria-label="Language switcher"><button class="lang-btn" type="button" data-lang="de">DE</button><button class="lang-btn" type="button" data-lang="sv">SV</button><button class="lang-btn" type="button" data-lang="en">EN</button></div>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-label="Open menu"><span class="inline-lang lang-de">Menü</span><span class="inline-lang lang-sv">Meny</span><span class="inline-lang lang-en">Menu</span></button>
     </div>
   </div>
 </header>
-<main id="main">
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="card hero-card">
-      <img class="logo-hero" src="vorq-group-logo.svg" alt="VORQ Group logo">
-      <div class="lang lang-de"><div class="badge">Offizielle Unternehmenswebsite • Deutschland • Schweden • Europa</div><h1>Eine moderne Dachmarke für <span class="accent">digitale Plattformen</span>.</h1><p class="lead">VORQ Group ist die Unternehmens- und Dachmarke für spezialisierte digitale Projekte in den Bereichen Internetportale, Anzeigenplattformen, Content und digitale Dienstleistungen.</p><div class="cta-row"><a class="btn btn-primary" href="projects.html">Projekte ansehen</a><a class="btn btn-secondary" href="impressum.html">Unternehmen & Kontakt</a></div></div>
-      <div class="lang lang-sv"><div class="badge">Officiell företagswebbplats • Tyskland • Sverige • Europa</div><h1>Ett modernt paraplyvarumärke för <span class="accent">digitala plattformar</span>.</h1><p class="lead">VORQ Group är företags- och paraplyvarumärket för specialiserade digitala projekt inom internetportaler, annonsplattformar, innehåll och digitala tjänster.</p><div class="cta-row"><a class="btn btn-primary" href="projects.html">Visa projekt</a><a class="btn btn-secondary" href="impressum.html">Företag & kontakt</a></div></div>
-      <div class="lang lang-en"><div class="badge">Official company website • Germany • Sweden • Europe</div><h1>A modern umbrella brand for <span class="accent">digital platforms</span>.</h1><p class="lead">VORQ Group is the company and umbrella brand for specialised digital projects in internet portals, advertising platforms, content and digital services.</p><div class="cta-row"><a class="btn btn-primary" href="projects.html">View projects</a><a class="btn btn-secondary" href="impressum.html">Company & contact</a></div></div>
-    </div>
-    <aside class="card hero-side">
-      <div class="lang lang-de"><h2>Klarer Unternehmensrahmen</h2><p>Diese Website verkauft keine Waren, lagert keine Produkte und bietet keine Reinigungsdienste an. Sie stellt VORQ Group und die dazugehörigen Projekte vor.</p></div>
-      <div class="lang lang-sv"><h2>Tydlig företagsram</h2><p>Denna webbplats säljer inga varor, lagrar inga produkter och erbjuder inga städtjänster. Den presenterar VORQ Group och tillhörande projekt.</p></div>
-      <div class="lang lang-en"><h2>Clear company frame</h2><p>This website does not sell goods, store products or provide cleaning services. It presents VORQ Group and its related projects.</p></div>
-      <div class="metric-grid"><div class="metric"><strong>4+</strong><span>Projects and pages</span></div><div class="metric"><strong>DE • SV • EN</strong><span>Three-language structure</span></div><div class="metric"><strong>01.07.2026</strong><span>Registered business start</span></div><div class="metric"><strong>VORQ</strong><span>Vision • Operations • Reach • Quality</span></div></div>
-    </aside>
-  </div>
-</section>
-<section class="section"><div class="container"><div class="section-head"><div class="lang lang-de"><div class="eyebrow">Portfolio</div><h2>Projekte unter VORQ Group</h2><p>Die folgenden Seiten sind als Projekte, Plattformen oder Inhalte unter der Dachmarke VORQ Group aufgeführt. Einzelne Projekte können eigene Bedingungen, Datenschutzinformationen und Moderationsregeln haben.</p></div><div class="lang lang-sv"><div class="eyebrow">Portfolio</div><h2>Projekt under VORQ Group</h2><p>Följande sidor presenteras som projekt, plattformar eller innehåll under paraplyvarumärket VORQ Group. Enskilda projekt kan ha egna villkor, integritetsregler och modereringsregler.</p></div><div class="lang lang-en"><div class="eyebrow">Portfolio</div><h2>Projects under VORQ Group</h2><p>The following pages are presented as projects, platforms or content under the VORQ Group umbrella brand. Individual projects may have their own terms, privacy information and moderation rules.</p></div></div><div class="grid-4">
-      <article class="card project-card"><h3>VORQ Fordon</h3><div class="project-meta"><span class="tag status-live">Full version</span><span class="tag">Open project</span><span class="tag">Sweden</span><span class="tag">Vehicle ads</span></div><div class="lang lang-de"><p>Fahrzeuganzeigen für Kauf und Verkauf. VORQ Group besitzt und verkauft keine Fahrzeuge; die Plattform veröffentlicht Anzeigen.</p></div><div class="lang lang-sv"><p>Fordonsannonser för köp och försäljning. VORQ Group äger eller säljer inte fordon; plattformen publicerar annonser.</p></div><div class="lang lang-en"><p>Vehicle listings for buying and selling. VORQ Group does not own or sell vehicles; the platform publishes ads.</p></div><div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/BilMarknad-HK/index.html" target="_blank" rel="noopener">Open project</a></div></article>
-      <article class="card project-card"><h3>VORQ Blog</h3><div class="project-meta"><span class="tag status-live">Full version</span><span class="tag">Open project</span><span class="tag">Media</span><span class="tag">Articles</span></div><div class="lang lang-de"><p>Blog für Inhalte zu Politik, Wirtschaft, Marketing, Werbung und gesellschaftlichen Themen. Werbeeinnahmen können künftig möglich sein.</p></div><div class="lang lang-sv"><p>Blogg för innehåll om politik, ekonomi, marknadsföring, reklam och samhällsfrågor. Annonsintäkter kan bli möjliga i framtiden.</p></div><div class="lang lang-en"><p>Blog for content about politics, economy, marketing, advertising and social topics. Advertising revenue may be possible in the future.</p></div><div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/HK-GLOBAL-BLOG/index.html" target="_blank" rel="noopener">Open project</a></div></article>
-      <article class="card project-card"><h3>VORQ Marknad</h3><div class="project-meta"><span class="tag status-beta">Beta version</span><span class="tag">Sweden</span><span class="tag">Used items</span></div><div class="lang lang-de"><p>Anzeigenplattform für gebrauchte oder ältere Geräte und Gegenstände. VORQ Group lagert, besitzt oder verkauft die Waren nicht.</p></div><div class="lang lang-sv"><p>Annonsplattform för begagnade eller äldre enheter och saker. VORQ Group lagrar, äger eller säljer inte varorna.</p></div><div class="lang lang-en"><p>Ads platform for used or older devices and goods. VORQ Group does not store, own or sell the goods.</p></div><div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/VORQ-Marknad/" target="_blank" rel="noopener">Open beta</a></div></article>
-      <article class="card project-card"><h3>Global Market & Services</h3><div class="project-meta"><span class="tag status-beta">Beta version</span><span class="tag">International</span><span class="tag">Services</span></div><div class="lang lang-de"><p>Globales Markt- und Dienstleistungsprojekt mit Kategorien nach Ländern. Für aktive Märkte gelten zusätzliche rechtliche Anforderungen.</p></div><div class="lang lang-sv"><p>Globalt marknads- och tjänsteprojekt med kategorier per land. Aktiva marknader kräver ytterligare juridisk anpassning.</p></div><div class="lang lang-en"><p>Global market and services project with country-based categories. Active markets require additional legal alignment.</p></div><div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/HK-Global-Market-Services/" target="_blank" rel="noopener">Open beta</a></div></article>
-    </div></div></section>
-<section class="section"><div class="container grid-3"><article class="card highlight"><div class="lang lang-de"><h3>Identität</h3><p><b>VORQ Group</b> wird als Geschäftsbezeichnung und Dachmarke des deutschen Einzelunternehmens Haitham Kojar verwendet.</p></div><div class="lang lang-sv"><h3>Identitet</h3><p><b>VORQ Group</b> används som företagsnamn/paraplyvarumärke för Haitham Kojars tyska enskilda näringsverksamhet.</p></div><div class="lang lang-en"><h3>Identity</h3><p><b>VORQ Group</b> is used as the business name and umbrella brand of the German sole proprietorship of Haitham Kojar.</p></div></article><article class="card highlight"><div class="lang lang-de"><h3>Aktivität</h3><p>Webdesign, Webentwicklung, IT-Dienstleistungen und Betrieb von Internetportalen.</p></div><div class="lang lang-sv"><h3>Verksamhet</h3><p>Webbdesign, webbutveckling, IT-tjänster och drift av internetportaler.</p></div><div class="lang lang-en"><h3>Activity</h3><p>Web design, web development, IT services and operation of internet portals.</p></div></article><article class="card highlight"><div class="lang lang-de"><h3>Aktualisierung</h3><p>Die Website ist nicht als Testseite gekennzeichnet. Inhalte werden regelmäßig geprüft und können etwa alle ein bis zwei Monate aktualisiert werden.</p></div><div class="lang lang-sv"><h3>Uppdatering</h3><p>Webbplatsen anges inte som testsida. Innehåll ses över regelbundet och kan uppdateras ungefär varannan månad.</p></div><div class="lang lang-en"><h3>Updates</h3><p>The website is not presented as a test page. Content is reviewed regularly and may be updated about every one to two months.</p></div></article></div></section>
 
-<section class="section"><div class="container"><div class="company-box"><div class="lang lang-de"><h2>Unternehmen & Kontakt</h2><dl><dt>Verantwortlich</dt><dd>Haitham Kojar</dd><dt>Geschäftsbezeichnung</dt><dd>VORQ Group</dd><dt>Rechtsform</dt><dd>nicht eingetragenes gewerbliches Einzelunternehmen</dd><dt>Anschrift</dt><dd>Ziegelstraße 26, 42289 Wuppertal, Deutschland</dd><dt>E-Mail</dt><dd><a href="mailto:info@vorq.group">info@vorq.group</a></dd><dt>Telefon</dt><dd><a href="tel:+491783705133">+49 178 3705133</a></dd></dl></div><div class="lang lang-sv"><h2>Företag & kontakt</h2><dl><dt>Ansvarig</dt><dd>Haitham Kojar</dd><dt>Företagsnamn</dt><dd>VORQ Group</dd><dt>Juridisk form</dt><dd>enskild näringsverksamhet utan handelsregisterregistrering</dd><dt>Adress</dt><dd>Ziegelstraße 26, 42289 Wuppertal, Tyskland</dd><dt>E-post</dt><dd><a href="mailto:info@vorq.group">info@vorq.group</a></dd><dt>Telefon</dt><dd><a href="tel:+491783705133">+49 178 3705133</a></dd></dl></div><div class="lang lang-en"><h2>Company & contact</h2><dl><dt>Responsible person</dt><dd>Haitham Kojar</dd><dt>Business name</dt><dd>VORQ Group</dd><dt>Legal form</dt><dd>non-registered commercial sole proprietorship</dd><dt>Address</dt><dd>Ziegelstraße 26, 42289 Wuppertal, Germany</dd><dt>Email</dt><dd><a href="mailto:info@vorq.group">info@vorq.group</a></dd><dt>Phone</dt><dd><a href="tel:+491783705133">+49 178 3705133</a></dd></dl></div></div></div></section>
-<section class="section"><div class="container"><div class="legal-note"><div class="lang lang-de"><h2>Rechtliche Trennung der Projekte</h2><p>Die Hauptwebsite von VORQ Group ist die Unternehmens- und Portfolioseite. Wenn ein Projekt Nutzern erlaubt, Anzeigen, Bilder, Inhalte oder Nachrichten zu veröffentlichen, gelten für dieses Projekt eigene rechtliche Regeln, insbesondere zu Nutzerinhalten, Meldungen, Datenschutz, Plattformverantwortung und Verbraucherschutz.</p><a href="legal.html">Rechtliche Hinweise öffnen →</a></div><div class="lang lang-sv"><h2>Juridisk separation mellan projekt</h2><p>VORQ Groups huvudwebbplats är företags- och portföljsidan. Om ett projekt låter användare publicera annonser, bilder, innehåll eller meddelanden gäller egna juridiska regler för det projektet, särskilt om användarinnehåll, rapportering, integritet, plattformsansvar och konsumentskydd.</p><a href="legal.html">Öppna juridisk information →</a></div><div class="lang lang-en"><h2>Legal separation between projects</h2><p>The main VORQ Group website is the company and portfolio site. If a project allows users to publish ads, images, content or messages, that project has its own legal rules, especially on user content, reporting, privacy, platform responsibility and consumer protection.</p><a href="legal.html">Open legal information →</a></div></div></div></section>
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card hero-card">
+        <img class="hero-logo" src="vorq-digital-logo.svg" alt="VORQ Digital logo">
+        <div class="lang lang-de">
+          <div class="badge">Offizielle Website • Deutschland • Schweden • Europa</div>
+          <h1>Digitale Projekte, Webentwicklung und Internetportale.</h1>
+          <p class="lead">VORQ Digital ist die Geschäftsbezeichnung und Unternehmenswebsite von Haitham Kojar für digitale Projekte, Webdesign, Webentwicklung, IT-Dienstleistungen und den Betrieb von Internetportalen.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="projects.html">Projekte ansehen</a><a class="btn btn-secondary" href="impressum.html">Unternehmen & Kontakt</a></div>
+        </div>
+        <div class="lang lang-sv">
+          <div class="badge">Officiell webbplats • Tyskland • Sverige • Europa</div>
+          <h1>Digitala projekt, webbutveckling och internetportaler.</h1>
+          <p class="lead">VORQ Digital är verksamhetsnamnet och företagswebbplatsen som används av Haitham Kojar för digitala projekt, webbdesign, webbutveckling, IT-tjänster och drift av internetportaler.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="projects.html">Visa projekt</a><a class="btn btn-secondary" href="impressum.html">Företag & kontakt</a></div>
+        </div>
+        <div class="lang lang-en">
+          <div class="badge">Official website • Germany • Sweden • Europe</div>
+          <h1>Digital projects, web development and internet portals.</h1>
+          <p class="lead">VORQ Digital is the business name and company website used by Haitham Kojar for digital projects, web design, web development, IT services and the operation of internet portals.</p>
+          <div class="cta-row"><a class="btn btn-primary" href="projects.html">View projects</a><a class="btn btn-secondary" href="impressum.html">Company & contact</a></div>
+        </div>
+      </div>
+
+      <aside class="card hero-side">
+        <div class="lang lang-de"><h2>Klarer rechtlicher Rahmen</h2><p>Diese Hauptwebsite stellt VORQ Digital und die zugehörigen digitalen Projekte vor. Verträge, Rechnungen und offizielle Korrespondenz erfolgen unter <strong>Haitham Kojar – VORQ Digital</strong>.</p></div>
+        <div class="lang lang-sv"><h2>Tydlig juridisk ram</h2><p>Denna huvudwebbplats presenterar VORQ Digital och de tillhörande digitala projekten. Avtal, fakturor och officiell korrespondens sker under <strong>Haitham Kojar – VORQ Digital</strong>.</p></div>
+        <div class="lang lang-en"><h2>Clear legal frame</h2><p>This main website presents VORQ Digital and the related digital projects. Contracts, invoices and official correspondence are issued under <strong>Haitham Kojar – VORQ Digital</strong>.</p></div>
+        <div class="metric-grid"><div class="metric"><strong>4+</strong><span>Projects and pages</span></div><div class="metric"><strong>DE • SV • EN</strong><span>Three-language structure</span></div><div class="metric"><strong>01.07.2026</strong><span>Registered business start</span></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="lang lang-de"><div class="eyebrow">Portfolio</div><h2>Projekte unter VORQ Digital</h2><p>Die folgenden Seiten sind digitale Projekte, Plattformen oder Inhalte unter der Geschäftsbezeichnung VORQ Digital. Einzelne Projekte können eigene Bedingungen, Datenschutzinformationen und Moderationsregeln haben.</p></div>
+        <div class="lang lang-sv"><div class="eyebrow">Portfolio</div><h2>Projekt under VORQ Digital</h2><p>Följande sidor är digitala projekt, plattformar eller innehåll under verksamhetsnamnet VORQ Digital. Enskilda projekt kan ha egna villkor, integritetsregler och modereringsregler.</p></div>
+        <div class="lang lang-en"><div class="eyebrow">Portfolio</div><h2>Projects under VORQ Digital</h2><p>The following pages are digital projects, platforms or content under the VORQ Digital business name. Individual projects may have their own terms, privacy information and moderation rules.</p></div>
+      </div>
+
+      <div class="grid-4">
+        <article class="card project-card">
+          <h3>VORQ Fordon</h3>
+          <div class="project-meta"><span class="tag status-live">Full version</span><span class="tag">Open project</span><span class="tag">Sweden</span><span class="tag">Vehicle ads</span></div>
+          <div class="lang lang-de"><p>Fahrzeuganzeigen für Kauf und Verkauf. VORQ Digital besitzt und verkauft keine Fahrzeuge; die jeweilige Anzeige und der Inhalt stammen vom jeweiligen Anbieter.</p></div>
+          <div class="lang lang-sv"><p>Fordonsannonser för köp och försäljning. VORQ Digital äger eller säljer inte fordon; varje annons och dess innehåll kommer från respektive annonsör.</p></div>
+          <div class="lang lang-en"><p>Vehicle listings for buying and selling. VORQ Digital does not own or sell vehicles; each listing and its content is provided by the respective advertiser.</p></div>
+          <div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/BilMarknad-HK/index.html" target="_blank" rel="noopener">Open project</a></div>
+        </article>
+
+        <article class="card project-card">
+          <h3>VORQ Blog</h3>
+          <div class="project-meta"><span class="tag status-live">Full version</span><span class="tag">Open project</span><span class="tag">Media</span><span class="tag">Articles</span></div>
+          <div class="lang lang-de"><p>Blog für Inhalte zu Politik, Wirtschaft, Marketing, Werbung und gesellschaftlichen Themen. Werbeerlöse können künftig möglich sein.</p></div>
+          <div class="lang lang-sv"><p>Blogg för innehåll om politik, ekonomi, marknadsföring, reklam och samhällsfrågor. Annonsintäkter kan bli möjliga i framtiden.</p></div>
+          <div class="lang lang-en"><p>Blog for content about politics, economy, marketing, advertising and social topics. Advertising revenue may be possible in the future.</p></div>
+          <div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/HK-GLOBAL-BLOG/index.html" target="_blank" rel="noopener">Open project</a></div>
+        </article>
+
+        <article class="card project-card">
+          <h3>VORQ Marknad</h3>
+          <div class="project-meta"><span class="tag status-beta">Beta version</span><span class="tag">Open beta</span><span class="tag">Used items</span></div>
+          <div class="lang lang-de"><p>Anzeigenplattform für gebrauchte oder ältere Geräte und Gegenstände. VORQ Digital lagert, besitzt oder verkauft die Waren nicht.</p></div>
+          <div class="lang lang-sv"><p>Annonsplattform för begagnade eller äldre enheter och saker. VORQ Digital lagrar, äger eller säljer inte varorna.</p></div>
+          <div class="lang lang-en"><p>Ads platform for used or older devices and goods. VORQ Digital does not store, own or sell the goods.</p></div>
+          <div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/VORQ-Marknad/" target="_blank" rel="noopener">Open beta</a></div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Global Market &amp; Services</h3>
+          <div class="project-meta"><span class="tag status-beta">Beta version</span><span class="tag">Open beta</span><span class="tag">International</span></div>
+          <div class="lang lang-de"><p>Globales Markt- und Dienstleistungsprojekt mit Kategorien nach Ländern. Aktive Märkte können zusätzliche rechtliche Informationen erfordern.</p></div>
+          <div class="lang lang-sv"><p>Globalt marknads- och tjänsteprojekt med kategorier per land. Aktiva marknader kan kräva ytterligare juridisk information.</p></div>
+          <div class="lang lang-en"><p>Global market and services project with country-based categories. Active markets may require additional legal information.</p></div>
+          <div class="project-actions"><a class="btn btn-secondary" href="https://hk-lens.github.io/HK-Global-Market-Services/" target="_blank" rel="noopener">Open beta</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3">
+      <article class="card content-card"><div class="lang lang-de"><h3>Identität</h3><p><strong>VORQ Digital</strong> ist eine Geschäftsbezeichnung von Haitham Kojar und keine GmbH, UG, AG oder Holdinggesellschaft.</p></div><div class="lang lang-sv"><h3>Identitet</h3><p><strong>VORQ Digital</strong> är ett verksamhetsnamn som används av Haitham Kojar och är inte ett GmbH-, UG-, AG- eller holdingbolag.</p></div><div class="lang lang-en"><h3>Identity</h3><p><strong>VORQ Digital</strong> is a business name used by Haitham Kojar and is not a GmbH, UG, AG or holding company.</p></div></article>
+      <article class="card content-card"><div class="lang lang-de"><h3>Aktivität</h3><p>Webdesign, Webentwicklung, IT-Dienstleistungen und Betrieb von Internetportalen.</p></div><div class="lang lang-sv"><h3>Verksamhet</h3><p>Webbdesign, webbutveckling, IT-tjänster och drift av internetportaler.</p></div><div class="lang lang-en"><h3>Activity</h3><p>Web design, web development, IT services and operation of internet portals.</p></div></article>
+      <article class="card content-card"><div class="lang lang-de"><h3>Aktualisierung</h3><p>Die Inhalte werden regelmäßig geprüft und können etwa alle ein bis zwei Monate aktualisiert werden.</p></div><div class="lang lang-sv"><h3>Uppdatering</h3><p>Innehållet granskas regelbundet och kan uppdateras ungefär varannan månad.</p></div><div class="lang lang-en"><h3>Updates</h3><p>Content is reviewed regularly and may be updated about every one to two months.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="company-box">
+        <div class="lang lang-de"><h2>Unternehmen & Kontakt</h2><dl><dt>Rechtlicher Anbieter</dt><dd>Haitham Kojar – VORQ Digital</dd><dt>Geschäftsbezeichnung</dt><dd>VORQ Digital</dd><dt>Inhaber / verantwortlich</dt><dd>Haitham Kojar</dd><dt>Rechtsform</dt><dd>nicht eingetragenes gewerbliches Einzelunternehmen</dd><dt>Anschrift</dt><dd>Ziegelstraße 26, 42289 Wuppertal, Deutschland</dd><dt>E-Mail</dt><dd><a href="mailto:info@vorq.group">info@vorq.group</a></dd><dt>Telefon</dt><dd><a href="tel:+491783705133">+49 178 3705133</a></dd></dl></div>
+        <div class="lang lang-sv"><h2>Företag & kontakt</h2><dl><dt>Juridisk leverantör</dt><dd>Haitham Kojar – VORQ Digital</dd><dt>Verksamhetsnamn</dt><dd>VORQ Digital</dd><dt>Innehavare / ansvarig</dt><dd>Haitham Kojar</dd><dt>Juridisk form</dt><dd>enskild näringsverksamhet utan handelsregisterregistrering</dd><dt>Adress</dt><dd>Ziegelstraße 26, 42289 Wuppertal, Tyskland</dd><dt>E-post</dt><dd><a href="mailto:info@vorq.group">info@vorq.group</a></dd><dt>Telefon</dt><dd><a href="tel:+491783705133">+49 178 3705133</a></dd></dl></div>
+        <div class="lang lang-en"><h2>Company & contact</h2><dl><dt>Legal provider</dt><dd>Haitham Kojar – VORQ Digital</dd><dt>Business name</dt><dd>VORQ Digital</dd><dt>Owner / responsible person</dt><dd>Haitham Kojar</dd><dt>Legal form</dt><dd>non-registered commercial sole proprietorship</dd><dt>Address</dt><dd>Ziegelstraße 26, 42289 Wuppertal, Germany</dd><dt>Email</dt><dd><a href="mailto:info@vorq.group">info@vorq.group</a></dd><dt>Phone</dt><dd><a href="tel:+491783705133">+49 178 3705133</a></dd></dl></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="legal-note">
+        <div class="lang lang-de"><h2>Rechtliche Trennung der Projekte</h2><p>Diese Website ist die Unternehmens- und Portfolioseite von VORQ Digital. Wenn ein Projekt Nutzern erlaubt, Anzeigen, Bilder, Inhalte oder Nachrichten zu veröffentlichen, gelten für dieses Projekt eigene Regeln zu Nutzerinhalten, Meldungen, Datenschutz, Plattformverantwortung und Verbraucherschutz.</p><a href="legal.html">Rechtliche Hinweise öffnen →</a></div>
+        <div class="lang lang-sv"><h2>Juridisk separation mellan projekt</h2><p>Denna webbplats är VORQ Digitals företags- och portföljsida. Om ett projekt låter användare publicera annonser, bilder, innehåll eller meddelanden gäller egna regler för användarinnehåll, rapportering, integritet, plattformsansvar och konsumentskydd.</p><a href="legal.html">Öppna juridisk information →</a></div>
+        <div class="lang lang-en"><h2>Legal separation between projects</h2><p>This website is the company and portfolio site of VORQ Digital. If a project allows users to publish ads, images, content or messages, that project has its own rules on user content, reporting, privacy, platform responsibility and consumer protection.</p><a href="legal.html">Open legal information →</a></div>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <a class="brand" href="index.html"><img src="vorq-group-logo.svg" alt="VORQ Group"></a>
-      <p><span class="lang lang-de">VORQ Group ist die Dachmarke und Unternehmenswebsite für digitale Projekte, geführt unter dem deutschen Einzelunternehmen von Haitham Kojar.</span><span class="lang lang-sv">VORQ Group är paraplyvarumärket och företagswebbplatsen för digitala projekt, drivet under Haitham Kojars tyska enskilda näringsverksamhet.</span><span class="lang lang-en">VORQ Group is the umbrella brand and company website for digital projects, operated under the German sole proprietorship of Haitham Kojar.</span></p>
-      <p class="small">© 2026 VORQ Group • Vision • Operations • Reach • Quality</p>
+      <a class="brand" href="index.html" aria-label="VORQ Digital home"><img class="brand-logo" src="vorq-digital-logo.svg" alt="VORQ Digital"></a>
+      <p><span class="lang lang-de">VORQ Digital ist die Geschäftsbezeichnung und Unternehmenswebsite für digitale Projekte, geführt von Haitham Kojar als nicht eingetragenes gewerbliches Einzelunternehmen in Deutschland.</span><span class="lang lang-sv">VORQ Digital är verksamhetsnamnet och företagswebbplatsen för digitala projekt, driven av Haitham Kojar som icke handelsregisterregistrerad enskild näringsverksamhet i Tyskland.</span><span class="lang lang-en">VORQ Digital is the business name and company website for digital projects operated by Haitham Kojar as a non-registered commercial sole proprietorship in Germany.</span></p>
+      <p class="small">© 2026 Haitham Kojar – VORQ Digital</p>
     </div>
-    <div class="footer-links">
-      <a href="projects.html">Projects</a><a href="impressum.html">Impressum</a><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookies</a><a href="notice-action.html">Notice</a>
-    </div>
+    <div class="footer-links"><a href="projects.html">Projects</a><a href="impressum.html">Impressum</a><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookies</a><a href="notice-action.html">Notice</a></div>
   </div>
 </footer>
-<script src="assets/script.js" defer></script>
-</body></html>
+
+<script>
+  (function(){
+    var buttons=document.querySelectorAll(".lang-btn");
+    buttons.forEach(function(button){button.addEventListener("click",function(){var lang=button.getAttribute("data-lang")||"de";try{localStorage.setItem("vorqLang",lang)}catch(e){}document.documentElement.setAttribute("data-lang",lang);document.documentElement.lang=lang;});});
+    var menuButton=document.querySelector(".menu-btn");
+    var nav=document.querySelector(".nav");
+    if(menuButton&&nav){menuButton.addEventListener("click",function(){var open=nav.classList.toggle("open");menuButton.setAttribute("aria-expanded",open?"true":"false");});}
+  })();
+</script>
+</body>
+</html>

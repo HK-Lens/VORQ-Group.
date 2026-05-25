@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
+
+Disallow: /DESIGN_NOTES_AR.md
+Disallow: /LEGAL_GAPS_SUMMARY_AR.md
+Disallow: /LEGAL_LINK_CHECK.txt
+Disallow: /README_UPLOAD_AR.txt
+Disallow: /README-UPLOAD.txt
+
 Sitemap: sitemap.xml

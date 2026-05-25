@@ -1,2 +1,65 @@
-Internal HTML link issues: none
-Phone in header: none
+LEGAL_LINK_CHECK.txt
+فحص داخلي قبل النشر — VORQ Digital
+آخر تحديث: 2026-05-25
+
+هذا الملف مخصص للفحص الداخلي فقط، ولا يُعرض للزوار أو العملاء.
+
+نتيجة الفحص الحالية:
+- Internal HTML link issues: none
+- Phone in header: none
+
+قواعد يجب تطبيقها على كل ملفات المشروع:
+1. اسم الملف لا يُغيّر عند التعديل.
+2. الاسم التسويقي المعتمد: VORQ Digital.
+3. الصيغة القانونية في الصفحات الرسمية:
+   - Haitham Kojar – VORQ Digital
+   - أو: VORQ Digital, Inhaber: Haitham Kojar
+4. لا يُستخدم VORQ Digital وحده في Impressum أو Legal أو Privacy أو Terms أو الفواتير أو العقود أو البريد الرسمي.
+5. لا يُستخدم اسم VORQ Group بعد الآن في ملفات الموقع الجديدة.
+6. لا يُستخدم الشعار القديم vorq-group-logo.svg.
+7. الشعار الموحد:
+   - vorq-digital-logo.svg
+   - يوضع في جذر المشروع بجانب index.html
+   - لا يوضع داخل assets أو أي مجلد داخلي.
+8. رقم الهاتف لا يظهر في الهيدر أو أعلى الصفحة.
+9. رقم الهاتف يظهر فقط داخل معلومات الشركة والاتصال / Impressum / Company & contact.
+10. لا تُعرض تعليمات داخلية أو ملاحظات موجهة لصاحب المشروع داخل صفحات الزوار.
+11. الصفحات موجهة للزوار والعملاء فقط.
+12. معلومات الشركة والاتصال تُعرض معاً، وليس الهاتف في أعلى الصفحة.
+13. جميع الصفحات العامة يجب أن تحتوي روابط قانونية واضحة:
+    - impressum.html
+    - legal.html
+    - privacy.html
+    - terms.html
+    - cookie-policy.html
+14. صفحة ODR القديمة لا تُضاف.
+15. إذا صدرت Steuernummer أو USt-IdNr لاحقاً، يتم تحديث Impressum عند الحاجة.
+16. إذا تم استخدام Kleinunternehmerregelung رسمياً، تُضاف صيغة §19 UStG فقط بعد التأكد من Finanzamt.
+17. Privacy يجب أن تذكر Hosting / Server-Log-Files عند تشغيل الموقع على GitHub Pages أو Firebase أو أي مزود استضافة.
+18. Cookie Policy يجب أن تذكر عدم استخدام Tracking/Marketing Cookies حالياً، وأن أي أدوات مستقبلية تحتاج تحديث قبل التفعيل.
+19. Terms يجب أن تكون شروط استخدام الموقع فقط، وليست بديلاً عن AGB للعقود والفواتير مع العملاء.
+20. لكل مشروع نشط أو تجريبي قد تُضاف قواعد خاصة به قبل التشغيل التجاري الكامل.
+
+حالات المشاريع المعتمدة:
+- VORQ Fordon: Full version / Open project.
+- VORQ Blog: Full version / Open project.
+- VORQ Marknad: Beta version / Open beta.
+- Global Market & Services: Beta version / Open beta.
+
+ملاحظات قانونية استراتيجية:
+- VORQ Digital هو اسم تجاري/تسويقي مناسب أكثر من VORQ Group لأنه لا يوحي بوجود Holding أو Konzern.
+- الكيان القانوني هو Haitham Kojar بصفته nicht eingetragenes gewerbliches Einzelunternehmen في ألمانيا.
+- الموقع الرئيسي يعرض الشركة والمشاريع، ولا يبيع المنتجات مباشرة ولا يملك المركبات أو البضائع المعروضة في المشاريع التابعة.
+- عند تشغيل منصات تسمح بإعلانات المستخدمين أو الصور أو الرسائل، يجب تحديث شروط الاستخدام، سياسة الخصوصية، وقناة البلاغات لكل منصة.
+
+قائمة فحص قبل رفع أي ملف:
+[ ] لا يوجد VORQ Group.
+[ ] لا يوجد vorq-group-logo.svg.
+[ ] يوجد vorq-digital-logo.svg في الجذر.
+[ ] لا يوجد الهاتف في الهيدر.
+[ ] الهاتف موجود فقط داخل قسم الشركة/التواصل عند الحاجة.
+[ ] لا توجد تعليمات داخلية ظاهرة للزائر.
+[ ] الروابط الداخلية تعمل.
+[ ] روابط المشاريع الخارجية تعمل.
+[ ] اللغة الألمانية والسويدية والإنجليزية متاحة في الصفحات الرئيسية والقانونية.
+[ ] الصيغة القانونية Haitham Kojar – VORQ Digital موجودة في الصفحات القانونية.

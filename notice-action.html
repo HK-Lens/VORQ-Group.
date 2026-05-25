@@ -3,50 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>(function(){var lang='de';try{lang=localStorage.getItem('vorqLang')||'de';}catch(e){}document.documentElement.setAttribute('data-lang',lang);document.documentElement.lang=lang;if(location.hostname.endsWith('github.io')){var p=location.pathname.split('/').filter(Boolean);var b=p.length?('/'+p[0]+'/'):'/';document.write('<base href="'+b+'">');}})();</script>
-  <title>Notice and action | VORQ Group</title>
-  <meta name="description" content="Contact channel for legal notices related to VORQ Group projects.">
+  <script>
+    (function(){
+      var lang='de';
+      try{ lang=localStorage.getItem('vorqLang') || 'de'; }catch(e){}
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang;
+      if(location.hostname.endsWith('github.io')){
+        var p = location.pathname.split('/').filter(Boolean);
+        var b = p.length ? ('/' + p[0] + '/') : '/';
+        document.write('<base href="' + b + '">');
+      }
+    })();
+  </script>
+  <title>Notice &amp; Action | VORQ Digital</title>
+  <meta name="description" content="Zentraler Kontaktkanal für rechtliche Hinweise und Meldungen zu potenziell rechtswidrigen Inhalten auf VORQ Digital Projektseiten.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0A2342">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    :root{--vd-blue:#0A2342;--vd-ink:#172033;--vd-muted:#64748b;--vd-bg:#f6f8fb;--vd-card:#fff;--vd-line:#e5eaf1;--vd-gold:#b98938;--vd-radius:22px;}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--vd-bg);color:var(--vd-ink)}
+    .container{width:min(1120px,calc(100% - 32px));margin-inline:auto}.skip{position:absolute;left:-999px}.skip:focus{left:18px;top:18px;z-index:100;background:#fff;color:var(--vd-blue);padding:10px 14px;border-radius:12px;text-decoration:none}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--vd-line)}.header-inner{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:inline-flex;align-items:center;text-decoration:none;color:var(--vd-blue);font-weight:900;min-width:0}.brand-logo{height:38px;width:auto;display:block}.nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.nav a,.footer-links a{color:var(--vd-ink);text-decoration:none;font-size:14px;font-weight:700;padding:9px 10px;border-radius:999px}.nav a:hover,.nav a.active,.footer-links a:hover{background:#eef3f8;color:var(--vd-blue)}.header-tools{display:flex;align-items:center;gap:10px}.lang-switch{display:flex;gap:4px;background:#eef3f8;padding:4px;border-radius:999px}.lang-btn{border:0;background:transparent;border-radius:999px;padding:6px 8px;cursor:pointer;font-weight:800;color:var(--vd-muted)}html[data-lang="de"] .lang-btn[data-lang="de"],html[data-lang="sv"] .lang-btn[data-lang="sv"],html[data-lang="en"] .lang-btn[data-lang="en"]{background:#fff;color:var(--vd-blue);box-shadow:0 1px 6px rgba(10,35,66,.10)}.menu-btn{display:none;border:1px solid var(--vd-line);background:#fff;border-radius:999px;padding:8px 12px;font-weight:800;color:var(--vd-blue)}
+    .page-hero{padding:62px 0 34px}.page-card,.content-card,.company-box,.legal-note{background:var(--vd-card);border:1px solid var(--vd-line);border-radius:var(--vd-radius);box-shadow:0 20px 60px rgba(10,35,66,.07)}.page-card{padding:clamp(26px,4vw,46px)}.badge,.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#f4efe3;color:#6d5320;border:1px solid #eadcb8;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:900;margin-bottom:16px}h1{font-size:clamp(32px,5vw,52px);line-height:1.02;margin:0 0 14px;color:var(--vd-blue);letter-spacing:-.04em}h2{font-size:clamp(21px,2.4vw,28px);color:var(--vd-blue);margin:0 0 12px;letter-spacing:-.025em}h3{color:var(--vd-blue);margin:0 0 10px}.lead{font-size:clamp(16px,2vw,18px);line-height:1.7;color:var(--vd-muted);max-width:860px;margin:0}.section{padding:24px 0}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.content-card,.company-box,.legal-note{padding:24px}.content-card p,.legal-note p,.company-box p{color:var(--vd-muted);line-height:1.7;margin:0 0 12px}.content-card ul{margin:10px 0 0;padding-left:20px;color:var(--vd-muted);line-height:1.7}.notice{border-left:4px solid var(--vd-gold);background:#fffbf2;padding:14px 16px;border-radius:14px;color:#57411f}.project-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.project-mini{border:1px solid var(--vd-line);border-radius:18px;padding:16px;background:#fff}.tag{display:inline-flex;font-size:12px;font-weight:800;border-radius:999px;padding:6px 9px;background:#eef3f8;color:var(--vd-blue);margin:2px}.status-live{background:#e9f8ef;color:#17633a}.status-beta{background:#fff3dd;color:#7a4c00}.footer{border-top:1px solid var(--vd-line);background:#fff;padding:34px 0;margin-top:30px}.footer-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:22px;align-items:start}.footer p{color:var(--vd-muted);line-height:1.65;margin:12px 0 0;font-size:14px}.footer .small{font-size:12px}.footer-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.inline-lang,.lang{display:none}html[data-lang="de"] .lang-de,html[data-lang="sv"] .lang-sv,html[data-lang="en"] .lang-en{display:initial}html[data-lang="de"] div.lang-de,html[data-lang="sv"] div.lang-sv,html[data-lang="en"] div.lang-en{display:block}a{color:var(--vd-blue)}
+    @media (max-width:900px){.header-inner{align-items:flex-start;padding:12px 0;flex-direction:column}.nav{display:none;width:100%;padding-top:8px;border-top:1px solid var(--vd-line)}.nav.open{display:flex}.header-tools{width:100%;justify-content:space-between}.menu-btn{display:inline-flex}.grid-2,.grid-3,.project-list,.footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.brand-logo{height:34px}}
+  </style>
 </head>
 <body>
-<a href="#main" class="skip">Skip to content</a>
+<a href="#main" class="skip"><span class="inline-lang lang-de">Zum Inhalt springen</span><span class="inline-lang lang-sv">Hoppa till innehåll</span><span class="inline-lang lang-en">Skip to content</span></a>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="VORQ Group home">
-      <img src="vorq-group-logo.svg" alt="VORQ Group">
-      <span class="brand-mini">VQ</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation"><a class="" href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a>
-<a class="" href="projects.html"><span class="inline-lang lang-de">Projekte</span><span class="inline-lang lang-sv">Projekt</span><span class="inline-lang lang-en">Projects</span></a>
-<a class="" href="impressum.html">Impressum</a>
-<a class="active" href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a>
-<a class="" href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a></nav>
+    <a class="brand" href="index.html" aria-label="VORQ Digital home"><img class="brand-logo" src="vorq-digital-logo.svg" alt="VORQ Digital"></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a>
+      <a href="projects.html"><span class="inline-lang lang-de">Projekte</span><span class="inline-lang lang-sv">Projekt</span><span class="inline-lang lang-en">Projects</span></a>
+      <a href="impressum.html">Impressum</a>
+      <a class="active" href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a>
+      <a href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a>
+    </nav>
     <div class="header-tools">
-      <div class="lang-switch" aria-label="Language switcher"><button class="lang-btn" data-lang="de">DE</button><button class="lang-btn" data-lang="sv">SV</button><button class="lang-btn" data-lang="en">EN</button></div>
-      <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
+      <div class="lang-switch" aria-label="Language switcher"><button class="lang-btn" type="button" data-lang="de">DE</button><button class="lang-btn" type="button" data-lang="sv">SV</button><button class="lang-btn" type="button" data-lang="en">EN</button></div>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-label="Open menu"><span class="inline-lang lang-de">Menü</span><span class="inline-lang lang-sv">Meny</span><span class="inline-lang lang-en">Menu</span></button>
     </div>
   </div>
 </header>
 <main id="main">
-<section class="page-hero"><div class="container"><div class="card page-card"><div class="lang lang-de"><div class="badge">Meldungen</div><h1>Kontakt für rechtliche Meldungen</h1><p class="lead">Für Hinweise zu potenziell rechtswidrigen Inhalten auf VORQ-Projektseiten.</p></div><div class="lang lang-sv"><div class="badge">Rapportering</div><h1>Kontakt för juridiska anmälningar</h1><p class="lead">För meddelanden om potentiellt olagligt innehåll på VORQ-projektsidor.</p></div><div class="lang lang-en"><div class="badge">Notice</div><h1>Contact for legal notices</h1><p class="lead">For notices about potentially illegal content on VORQ project pages.</p></div></div></div></section>
-<section class="section"><div class="container grid-2"><article class="card content-card"><div class="lang lang-de"><h2>Was melden?</h2><p>Bitte melden Sie Inhalte, die Ihrer Ansicht nach rechtswidrig sind, mit Projektlink, genauer URL, Beschreibung, Grund der Meldung und Kontaktmöglichkeit.</p></div><div class="lang lang-sv"><h2>Vad kan rapporteras?</h2><p>Rapportera innehåll som du anser vara olagligt med projektlänk, exakt URL, beskrivning, skäl för rapporten och kontaktuppgifter.</p></div><div class="lang lang-en"><h2>What to report?</h2><p>Please report content you consider illegal with the project link, exact URL, description, reason for the notice and contact details.</p></div></article><article class="card content-card"><div class="lang lang-de"><h2>Kontakt</h2><p>E-Mail: <a href="mailto:info@vorq.group">info@vorq.group</a></p><p class="notice">Diese Seite ist ein zentraler Kontaktkanal. Projektspezifische Meldewege können zusätzlich gelten.</p></div><div class="lang lang-sv"><h2>Kontakt</h2><p>E-post: <a href="mailto:info@vorq.group">info@vorq.group</a></p><p class="notice">Denna sida är en central kontaktkanal. Projektspecifika rapporteringsvägar kan också gälla.</p></div><div class="lang lang-en"><h2>Contact</h2><p>Email: <a href="mailto:info@vorq.group">info@vorq.group</a></p><p class="notice">This page is a central contact channel. Project-specific reporting channels may also apply.</p></div></article></div></section>
+  <section class="page-hero"><div class="container"><div class="page-card">
+    <div class="lang lang-de"><div class="badge">Meldungen zu Inhalten</div><h1>Notice &amp; Action</h1><p class="lead">Zentraler Kontaktkanal für Hinweise zu potenziell rechtswidrigen Inhalten auf VORQ Digital Projektseiten.</p></div>
+    <div class="lang lang-sv"><div class="badge">Rapportering av innehåll</div><h1>Notice &amp; Action</h1><p class="lead">Central kontaktkanal för meddelanden om potentiellt olagligt innehåll på VORQ Digitals projektsidor.</p></div>
+    <div class="lang lang-en"><div class="badge">Content notices</div><h1>Notice &amp; Action</h1><p class="lead">Central contact channel for notices about potentially illegal content on VORQ Digital project pages.</p></div>
+  </div></div></section>
+
+  <section class="section"><div class="container grid-2">
+    <article class="content-card"><div class="lang lang-de"><h2>1. Zweck dieser Seite</h2><p>Diese Seite dient der Meldung konkreter Inhalte, die auf VORQ Digital Projektseiten veröffentlicht wurden und die Sie für rechtswidrig halten.</p><p>Sie gilt insbesondere für Projekte, die Anzeigen, Bilder, Texte oder andere Inhalte von Nutzern veröffentlichen können, zum Beispiel VORQ Fordon oder VORQ Marknad.</p></div><div class="lang lang-sv"><h2>1. Syfte med denna sida</h2><p>Denna sida används för att rapportera konkret innehåll som har publicerats på VORQ Digitals projektsidor och som du anser vara olagligt.</p><p>Den gäller särskilt projekt som kan publicera annonser, bilder, texter eller annat användarinnehåll, till exempel VORQ Fordon eller VORQ Marknad.</p></div><div class="lang lang-en"><h2>1. Purpose of this page</h2><p>This page is used to report specific content published on VORQ Digital project pages that you consider illegal.</p><p>It applies in particular to projects that may publish ads, images, text or other user content, for example VORQ Fordon or VORQ Marknad.</p></div></article>
+    <article class="content-card"><div class="lang lang-de"><h2>2. Was kann gemeldet werden?</h2><ul><li>betrügerische, irreführende oder rechtswidrige Anzeigen</li><li>Verletzungen von Marken-, Urheber- oder Persönlichkeitsrechten</li><li>verbotene, gefährliche oder nicht zulässige Waren</li><li>rechtswidrige Inhalte, Hass, Drohungen oder sonstige illegale Inhalte</li><li>falsche Identitäten oder missbräuchliche Nutzung der Plattform</li></ul></div><div class="lang lang-sv"><h2>2. Vad kan rapporteras?</h2><ul><li>bedrägliga, vilseledande eller olagliga annonser</li><li>intrång i varumärken, upphovsrätt eller personliga rättigheter</li><li>förbjudna, farliga eller otillåtna varor</li><li>olagligt innehåll, hat, hot eller annat olagligt innehåll</li><li>falska identiteter eller missbruk av plattformen</li></ul></div><div class="lang lang-en"><h2>2. What can be reported?</h2><ul><li>fraudulent, misleading or illegal listings</li><li>trademark, copyright or personality-right infringements</li><li>prohibited, dangerous or non-permitted goods</li><li>illegal content, hate, threats or other unlawful content</li><li>false identities or misuse of the platform</li></ul></div></article>
+  </div></section>
+
+  <section class="section"><div class="container grid-2">
+    <article class="content-card"><div class="lang lang-de"><h2>3. Erforderliche Angaben</h2><p>Damit eine Meldung geprüft werden kann, senden Sie bitte möglichst folgende Angaben:</p><ul><li>Projektname, zum Beispiel VORQ Fordon oder VORQ Marknad</li><li>exakte URL oder direkter Link zum betroffenen Inhalt</li><li>klare Beschreibung des gemeldeten Inhalts</li><li>Grund, warum Sie den Inhalt für rechtswidrig halten</li><li>Nachweise oder Unterlagen, soweit vorhanden</li><li>Ihre Kontaktangaben für Rückfragen</li></ul></div><div class="lang lang-sv"><h2>3. Nödvändig information</h2><p>För att en rapport ska kunna granskas bör du skicka följande uppgifter om möjligt:</p><ul><li>projektnamn, till exempel VORQ Fordon eller VORQ Marknad</li><li>exakt URL eller direktlänk till berört innehåll</li><li>tydlig beskrivning av det rapporterade innehållet</li><li>anledning till varför du anser att innehållet är olagligt</li><li>bevis eller dokumentation, om det finns</li><li>dina kontaktuppgifter för frågor</li></ul></div><div class="lang lang-en"><h2>3. Required information</h2><p>To enable review of a notice, please provide the following information where possible:</p><ul><li>project name, for example VORQ Fordon or VORQ Marknad</li><li>exact URL or direct link to the affected content</li><li>clear description of the reported content</li><li>reason why you consider the content illegal</li><li>evidence or documents, where available</li><li>your contact details for follow-up questions</li></ul></div></article>
+    <article class="content-card"><div class="lang lang-de"><h2>4. Kontaktkanal</h2><p>Senden Sie Meldungen per E-Mail an:</p><p class="notice"><strong><a href="mailto:info@vorq.group?subject=Legal%20notice%20-%20VORQ%20Digital">info@vorq.group</a></strong></p><p>Die vollständigen Anbieter- und Kontaktangaben finden Sie im <a href="impressum.html">Impressum</a>. Datenschutzinformationen finden Sie in der <a href="privacy.html">Datenschutzerklärung</a>.</p></div><div class="lang lang-sv"><h2>4. Kontaktkanal</h2><p>Skicka rapporter via e-post till:</p><p class="notice"><strong><a href="mailto:info@vorq.group?subject=Legal%20notice%20-%20VORQ%20Digital">info@vorq.group</a></strong></p><p>Fullständiga företags- och kontaktuppgifter finns i <a href="impressum.html">Impressum</a>. Integritetsinformation finns i <a href="privacy.html">integritetspolicyn</a>.</p></div><div class="lang lang-en"><h2>4. Contact channel</h2><p>Send notices by email to:</p><p class="notice"><strong><a href="mailto:info@vorq.group?subject=Legal%20notice%20-%20VORQ%20Digital">info@vorq.group</a></strong></p><p>Full provider and contact details are available in the <a href="impressum.html">Impressum</a>. Privacy information is available in the <a href="privacy.html">privacy notice</a>.</p></div></article>
+  </div></section>
+
+  <section class="section"><div class="container grid-2">
+    <article class="content-card"><div class="lang lang-de"><h2>5. Bearbeitung von Meldungen</h2><p>VORQ Digital prüft eingehende Meldungen auf Grundlage der bereitgestellten Informationen. Je nach Sachverhalt können Inhalte entfernt, gesperrt, an das betroffene Projekt weitergeleitet oder zusätzliche Informationen angefordert werden.</p><p>Bei eindeutig rechtswidrigen oder gefährlichen Inhalten können Maßnahmen ohne vorherige Ankündigung erfolgen. Gesetzliche Meldepflichten und Befugnisse von Behörden bleiben unberührt.</p></div><div class="lang lang-sv"><h2>5. Hantering av rapporter</h2><p>VORQ Digital granskar inkommande rapporter utifrån den information som lämnas. Beroende på ärendet kan innehåll tas bort, blockeras, vidarebefordras till berört projekt eller kompletterande information begäras.</p><p>Vid tydligt olagligt eller farligt innehåll kan åtgärder vidtas utan föregående meddelande. Lagstadgade rapporteringsskyldigheter och myndigheters befogenheter påverkas inte.</p></div><div class="lang lang-en"><h2>5. Processing of notices</h2><p>VORQ Digital reviews incoming notices based on the information provided. Depending on the matter, content may be removed, disabled, forwarded to the relevant project or additional information may be requested.</p><p>For clearly illegal or dangerous content, measures may be taken without prior notice. Statutory reporting obligations and the powers of authorities remain unaffected.</p></div></article>
+    <article class="content-card"><div class="lang lang-de"><h2>6. Missbrauch des Meldewegs</h2><p>Bitte nutzen Sie diesen Meldeweg nur für rechtliche Hinweise zu konkreten Inhalten. Offensichtlich unbegründete, wiederholt missbräuchliche oder bewusst falsche Meldungen können unberücksichtigt bleiben oder zu weiteren Maßnahmen führen.</p><p>Allgemeine geschäftliche Anfragen können über die im Impressum genannten Kontaktdaten gestellt werden.</p></div><div class="lang lang-sv"><h2>6. Missbruk av rapporteringsvägen</h2><p>Använd denna rapporteringsväg endast för juridiska meddelanden om konkret innehåll. Uppenbart ogrundade, upprepat missbrukande eller avsiktligt falska rapporter kan lämnas utan åtgärd eller leda till ytterligare åtgärder.</p><p>Allmänna affärsförfrågningar kan skickas via kontaktuppgifterna i Impressum.</p></div><div class="lang lang-en"><h2>6. Misuse of the reporting channel</h2><p>Please use this reporting channel only for legal notices about specific content. Clearly unfounded, repeatedly abusive or intentionally false notices may be disregarded or lead to further measures.</p><p>General business enquiries can be made through the contact details stated in the Impressum.</p></div></article>
+  </div></section>
+
+  <section class="section"><div class="container"><div class="legal-note">
+    <div class="lang lang-de"><h2>Wichtiger Hinweis</h2><p>Diese Seite ist ein zentraler Meldeweg. Einzelne Projekte können zusätzlich eigene Meldewege, Formulare oder Moderationsregeln bereitstellen. In dringenden Fällen mit Gefahr für Personen, Eigentum oder öffentliche Sicherheit wenden Sie sich bitte zusätzlich an die zuständigen Behörden.</p></div>
+    <div class="lang lang-sv"><h2>Viktig information</h2><p>Denna sida är en central rapporteringsväg. Enskilda projekt kan dessutom ha egna rapporteringsvägar, formulär eller modereringsregler. I brådskande fall med fara för personer, egendom eller allmän säkerhet bör du även kontakta behöriga myndigheter.</p></div>
+    <div class="lang lang-en"><h2>Important notice</h2><p>This page is a central reporting channel. Individual projects may additionally provide their own reporting channels, forms or moderation rules. In urgent cases involving danger to persons, property or public safety, please also contact the competent authorities.</p></div>
+  </div></div></section>
 </main>
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <a class="brand" href="index.html"><img src="vorq-group-logo.svg" alt="VORQ Group"></a>
-      <p><span class="lang lang-de">VORQ Group ist die Dachmarke und Unternehmenswebsite für digitale Projekte, geführt unter dem deutschen Einzelunternehmen von Haitham Kojar.</span><span class="lang lang-sv">VORQ Group är paraplyvarumärket och företagswebbplatsen för digitala projekt, drivet under Haitham Kojars tyska enskilda näringsverksamhet.</span><span class="lang lang-en">VORQ Group is the umbrella brand and company website for digital projects, operated under the German sole proprietorship of Haitham Kojar.</span></p>
-      <p class="small">© 2026 VORQ Group • Vision • Operations • Reach • Quality</p>
+      <a class="brand" href="index.html" aria-label="VORQ Digital home"><img class="brand-logo" src="vorq-digital-logo.svg" alt="VORQ Digital"></a>
+      <p>
+        <span class="lang lang-de">VORQ Digital ist die Geschäftsbezeichnung und Unternehmenswebsite für digitale Projekte, geführt von Haitham Kojar als nicht eingetragenes gewerbliches Einzelunternehmen in Deutschland.</span>
+        <span class="lang lang-sv">VORQ Digital är verksamhetsnamnet och företagswebbplatsen för digitala projekt, driven av Haitham Kojar som icke handelsregisterregistrerad enskild näringsverksamhet i Tyskland.</span>
+        <span class="lang lang-en">VORQ Digital is the business name and company website for digital projects operated by Haitham Kojar as a non-registered commercial sole proprietorship in Germany.</span>
+      </p>
+      <p class="small">© 2026 Haitham Kojar – VORQ Digital</p>
     </div>
     <div class="footer-links">
       <a href="projects.html">Projects</a><a href="impressum.html">Impressum</a><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookies</a><a href="notice-action.html">Notice</a>
     </div>
   </div>
 </footer>
+<script>
+  (function(){
+    document.querySelectorAll('.lang-btn').forEach(function(button){button.addEventListener('click',function(){var lang=button.getAttribute('data-lang')||'de';try{localStorage.setItem('vorqLang',lang)}catch(e){}document.documentElement.setAttribute('data-lang',lang);document.documentElement.lang=lang;});});
+    var menuButton=document.querySelector('.menu-btn');var nav=document.querySelector('.nav');if(menuButton&&nav){menuButton.addEventListener('click',function(){var open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',open?'true':'false');});}
+  })();
+</script>
 <script src="assets/script.js" defer></script>
-</body></html>
+</body>
+</html>

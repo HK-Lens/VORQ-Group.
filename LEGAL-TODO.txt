@@ -1,17 +1,18 @@
-LEGAL TODO FOR VORQ GROUP — UPDATED GERMANY VERSION
+VORQ Group official website - final clear-language revision
 
-Completed in this package:
-- Added dedicated impressum.html.
-- Replaced Sweden address with Germany address: Ziegelstraße 26, 42289 Wuppertal, Deutschland.
-- Added legal operator: Haitham Kojar — nicht eingetragenes gewerbliches Einzelunternehmen.
-- Added business designation / umbrella brand: VORQ Group.
-- Added registered activity: IT-Dienstleistungen, Webdesign, Webentwicklung, IT-Dienstleistungen und Betrieb von Internetportalen.
-- Added contact email: info@vorq.group and phone: +49 176 21193382.
-- Updated legal references to German / EU references: DDG, MStV, UStG, DSGVO/GDPR, TDDDG.
+Status:
+- Compact design replacing the large stacked mobile buttons.
+- Visible language selector on every page: Deutsch / Svenska / English.
+- Language is saved locally in the visitor browser.
+- German address and German contact details used.
+- Phone number used: +49 178 3705133.
+- Hosting provider disclosed as GitHub Pages in privacy.html.
+- The main website is legally separated from future interactive projects.
 
-Still verify before full commercial launch:
-1. Confirm whether the phone number should remain public.
-2. Add Steuernummer/USt-IdNr to invoices when issued by Finanzamt. Do not publish personal Steuer-ID.
-3. If login, forms, Firebase, analytics, ads, newsletter, payments or image uploads are activated, update privacy.html and cookie-policy.html before launch.
-4. Add project-specific terms for VORQ Fordon and any marketplace with user ads, uploaded images, account deletion, prohibited content and liability rules.
-5. This package is not legal advice and should be reviewed by a qualified adviser for final legal certainty.
+Before publishing:
+1. Confirm the owner name and address are exactly correct.
+2. If hosting changes from GitHub Pages, update privacy.html.
+3. If a VAT ID or business tax number is issued, add only the VAT ID where required; do not publish a private tax number unnecessarily.
+4. If any third-party images/icons/fonts are added later, add attribution if the license requires it.
+5. Do not use marketplace terms on the VORQ Group umbrella site; make separate terms/privacy for VORQ Fordon or other interactive projects.
+6. This is not legal advice. A German lawyer/tax adviser should review before commercial launch.

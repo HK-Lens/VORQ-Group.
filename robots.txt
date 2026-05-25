@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://vorq.group/sitemap.xml
+
+Sitemap: https://hk-lens.github.io/VORQ/sitemap.xml

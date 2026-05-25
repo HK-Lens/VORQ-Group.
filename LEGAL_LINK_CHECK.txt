@@ -1,10 +1,2 @@
-Internal HTML link issues: index.html: missing '+b+'
-projects.html: missing '+b+'
-impressum.html: missing '+b+'
-legal.html: missing '+b+'
-privacy.html: missing '+b+'
-terms.html: missing '+b+'
-cookie-policy.html: missing '+b+'
-notice-action.html: missing '+b+'
-404.html: missing '+b+'
+Internal HTML link issues: none
 Phone in header: none

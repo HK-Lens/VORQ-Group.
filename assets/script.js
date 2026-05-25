@@ -1,11 +1,93 @@
+(function () {
+  "use strict";
 
-(function(){
-  const root=document.documentElement;
-  const allowed=['de','sv','en'];
-  function getInitial(){try{const saved=localStorage.getItem('vorqLang');if(allowed.includes(saved))return saved;}catch(e){} const nav=(navigator.language||'en').slice(0,2).toLowerCase(); return allowed.includes(nav)?nav:'de';}
-  function setLang(lang){ if(!allowed.includes(lang)) lang='de'; root.setAttribute('data-lang',lang); root.lang=lang; try{localStorage.setItem('vorqLang',lang)}catch(e){} document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang); b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false');}); }
-  setLang(root.getAttribute('data-lang') || getInitial());
-  document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.lang)));
-  const menu=document.querySelector('.menu-btn'), nav=document.querySelector('.nav');
-  if(menu&&nav){menu.addEventListener('click',()=>{nav.classList.toggle('open');menu.setAttribute('aria-expanded',nav.classList.contains('open')?'true':'false')});}
+  const root = document.documentElement;
+  const allowedLanguages = ["de", "sv", "en"];
+  const storageKey = "vorqLang";
+
+  function isAllowedLanguage(lang) {
+    return allowedLanguages.includes(lang);
+  }
+
+  function detectInitialLanguage() {
+    try {
+      const savedLanguage = localStorage.getItem(storageKey);
+      if (isAllowedLanguage(savedLanguage)) return savedLanguage;
+    } catch (error) {
+      /* localStorage can be unavailable in some privacy modes. */
+    }
+
+    const browserLanguage = (navigator.language || "de").slice(0, 2).toLowerCase();
+    return isAllowedLanguage(browserLanguage) ? browserLanguage : "de";
+  }
+
+  function setLanguage(lang) {
+    const nextLanguage = isAllowedLanguage(lang) ? lang : "de";
+
+    root.setAttribute("data-lang", nextLanguage);
+    root.lang = nextLanguage;
+
+    try {
+      localStorage.setItem(storageKey, nextLanguage);
+    } catch (error) {
+      /* Ignore storage errors; language switching still works for the current page. */
+    }
+
+    document.querySelectorAll(".lang-btn").forEach((button) => {
+      const active = button.dataset.lang === nextLanguage;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
+  function setupLanguageSwitcher() {
+    setLanguage(root.getAttribute("data-lang") || detectInitialLanguage());
+
+    document.querySelectorAll(".lang-btn").forEach((button) => {
+      button.setAttribute("type", "button");
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+  }
+
+  function setupMobileMenu() {
+    const menuButton = document.querySelector(".menu-btn");
+    const nav = document.querySelector(".nav");
+
+    if (!menuButton || !nav) return;
+
+    menuButton.setAttribute("type", "button");
+    menuButton.setAttribute("aria-expanded", "false");
+
+    function setMenu(open) {
+      nav.classList.toggle("open", open);
+      menuButton.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    menuButton.addEventListener("click", () => {
+      setMenu(!nav.classList.contains("open"));
+    });
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMenu(false));
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setMenu(false);
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 980) setMenu(false);
+    });
+  }
+
+  function init() {
+    setupLanguageSwitcher();
+    setupMobileMenu();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
 })();

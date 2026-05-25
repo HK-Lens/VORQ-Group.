@@ -1,27 +1,13 @@
-VORQ Group official website - v6 audited GitHub fixed
+Upload instructions for GitHub Pages
 
-IMPORTANT FOR GITHUB PAGES:
-1. Upload the CONTENTS of this folder to the repository root, not the folder itself.
-2. The repository root must contain index.html directly.
-3. In GitHub Pages settings, select the branch and /root folder.
-4. After upload, open the site in a private/incognito tab or add ?v=6 to the URL to avoid old mobile cache.
-5. All internal links use ./relative paths to avoid GitHub Pages 404 errors under hk-lens.github.io/<repository-name>/.
+1) Extract the ZIP.
+2) Upload the CONTENTS of the folder to the ROOT of your repository.
+   Important: index.html must sit directly in the repository root.
+3) In GitHub -> Settings -> Pages:
+   - Source: Deploy from a branch
+   - Branch: main (or the branch you use)
+   - Folder: /(root)
+4) Wait 1-3 minutes, then open the site again.
+5) If your phone shows an old version, open in incognito or refresh with cache cleared.
 
-Files included:
-- index.html
-- impressum.html
-- legal.html
-- privacy.html
-- terms.html
-- cookie-policy.html
-- 404.html
-- robots.txt
-- sitemap.xml
-- .nojekyll
-- assets/css/site.css
-- assets/js/lang.js
-- favicon.svg
-- vorq-group-logo.svg
-
-Legal note:
-The pages are drafted for an informational umbrella website. Interactive projects such as marketplaces, ads, accounts, payments, or user-generated content need separate terms/privacy pages.
+This package uses relative links plus a dynamic base-path fix for GitHub Pages project URLs.

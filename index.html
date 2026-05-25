@@ -1,92 +1,250 @@
-<!doctype html>
-<html lang="de" class="js-off">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start | VORQ Group</title>
-  <meta name="description" content="Official VORQ Group umbrella website.">
-  <meta name="robots" content="index, follow">
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/css/site.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var lang='en'; try{lang=localStorage.getItem('vorqLang')||'en';}catch(e){}
+      document.documentElement.setAttribute('data-lang', lang);
+      if(location.hostname.endsWith('github.io')){
+        var parts=location.pathname.split('/').filter(Boolean);
+        var base=parts.length?('/'+parts[0]+'/'):'/';
+        document.write('<base href="'+base+'">');
+      }
+    })();
+  </script>
+  <title>VORQ Group | Official website</title>
+  <meta name="description" content="Official VORQ Group website with company information, Impressum, legal notice, privacy, terms and cookie policy in German, Swedish and English.">
+  <meta name="theme-color" content="#0A2342">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to main content</a>
-<header class="topbar">
-  <div class="container header">
-    <a class="brand" href="./index.html" data-keep-lang aria-label="VORQ Group start page">
-      <img src="./vorq-group-logo.svg" alt="VORQ Group">
-      <span class="brand-name">VORQ Group</span>
-      <small>Vision • Operations • Reach • Quality</small>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="VORQ Group start page">
+      <div class="brand-mark"><span>VQ</span></div>
+      <div class="brand-copy">
+        <div class="brand-title">VORQ Group</div>
+        <div class="brand-sub">Vision • Operations • Reach • Quality</div>
+      </div>
     </a>
-    <div class="actions" aria-label="Language selector">
-      <div class="lang-switch">
-        <button class="lang-btn" type="button" data-set-lang="de" aria-pressed="true">Deutsch</button>
-        <button class="lang-btn" type="button" data-set-lang="sv" aria-pressed="false">Svenska</button>
-        <button class="lang-btn" type="button" data-set-lang="en" aria-pressed="false">English</button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="index.html"><span class="inline-lang lang-de">Start</span><span class="inline-lang lang-sv">Start</span><span class="inline-lang lang-en">Home</span></a>
+      <a href="impressum.html"><span class="inline-lang lang-de">Impressum</span><span class="inline-lang lang-sv">Företagsinformation</span><span class="inline-lang lang-en">Impressum</span></a>
+      <a href="legal.html"><span class="inline-lang lang-de">Rechtliches</span><span class="inline-lang lang-sv">Juridik</span><span class="inline-lang lang-en">Legal</span></a>
+      <a href="privacy.html"><span class="inline-lang lang-de">Datenschutz</span><span class="inline-lang lang-sv">Integritet</span><span class="inline-lang lang-en">Privacy</span></a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn" data-lang="de" aria-pressed="false">DE</button>
+        <button class="lang-btn" data-lang="sv" aria-pressed="false">SV</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
       </div>
+      <a class="contact-pill" href="tel:+491783705133">+49 178 3705133</a>
     </div>
   </div>
-  <div class="container"><nav class="nav" aria-label="Main navigation"><a href="./index.html" data-keep-lang aria-current="page">Start</a><a href="./impressum.html" data-keep-lang >Impressum / Företagsinformation</a><a href="./legal.html" data-keep-lang >Legal</a><a href="./privacy.html" data-keep-lang >Privacy</a><a href="./terms.html" data-keep-lang >Terms</a><a href="./cookie-policy.html" data-keep-lang >Cookies</a></nav></div>
-  <div class="lang-note language-warning">Sprache sichtbar oben wählen: Deutsch • Svenska • English</div>
 </header>
-<main id="main">
 
-<section class="hero">
-  <div class="container">
-    <div class="lang-panel" data-lang="de">
-      <span class="eyebrow">Offizielle Hauptseite • Deutschland</span>
-      <h1>VORQ Group ist die Dachmarke für digitale Projekte.</h1>
-      <p class="lead">Diese Website ist eine allgemeine Unternehmens- und Projektseite. Sie ist kein Marktplatz, kein Zahlungsdienst, kein Verkäufer von Waren und kein Vermittler von Kaufverträgen.</p>
-      <div class="hero-grid">
-        <div class="card safe"><h2>Klare rechtliche Trennung</h2><p>Interaktive Projekte wie Anzeigenportale oder Marktplätze werden rechtlich getrennt geführt und erhalten eigene Nutzungsbedingungen, Datenschutzinformationen und Meldewege.</p></div>
-        <div class="card"><h2>Schnelle Auswahl</h2><p>Die Sprache befindet sich oben auf jeder Seite: <span class="kbd">Deutsch</span> <span class="kbd">Svenska</span> <span class="kbd">English</span>.</p></div>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card hero-card">
+        <div class="lang lang-de">
+          <div class="badge">Offizielle Unternehmenswebsite • Deutschland</div>
+          <h1>Klare <span class="accent">Rechtsinformationen</span> in drei Sprachen.</h1>
+          <p class="lead">VORQ Group ist die offizielle Website des in Deutschland geführten Einzelunternehmens für Webdesign, Webentwicklung, IT-Dienstleistungen und den Betrieb von Internetportalen.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="impressum.html">Impressum öffnen</a>
+            <a class="btn btn-secondary" href="privacy.html">Datenschutz ansehen</a>
+          </div>
+        </div>
+        <div class="lang lang-sv">
+          <div class="badge">Officiell företagswebbplats • Tyskland</div>
+          <h1>Tydlig <span class="accent">juridisk information</span> på tre språk.</h1>
+          <p class="lead">VORQ Group är den officiella webbplatsen för den i Tyskland registrerade enskilda firman för webbdesign, webbutveckling, IT-tjänster och drift av internetportaler.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="impressum.html">Öppna företagsinformation</a>
+            <a class="btn btn-secondary" href="privacy.html">Visa integritet</a>
+          </div>
+        </div>
+        <div class="lang lang-en">
+          <div class="badge">Official company website • Germany</div>
+          <h1>Clear <span class="accent">legal information</span> in three languages.</h1>
+          <p class="lead">VORQ Group is the official website of the German sole proprietorship for web design, web development, IT services and the operation of internet portals.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="impressum.html">Open legal notice</a>
+            <a class="btn btn-secondary" href="privacy.html">View privacy</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="lang-panel" data-lang="sv">
-      <span class="eyebrow">Officiell huvudsida • Tyskland</span>
-      <h1>VORQ Group är paraplyvarumärket för digitala projekt.</h1>
-      <p class="lead">Denna webbplats är en allmän företags- och projektsida. Den är inte en marknadsplats, inte en betaltjänst, inte en säljare av varor och inte en part i köpeavtal.</p>
-      <div class="hero-grid">
-        <div class="card safe"><h2>Tydlig juridisk separation</h2><p>Interaktiva projekt, till exempel annonsplattformar eller marknadsplatser, drivs separat och får egna villkor, integritetspolicyer och rapporteringsvägar.</p></div>
-        <div class="card"><h2>Språkvalet är synligt</h2><p>Språkvalet finns högst upp på varje sida: <span class="kbd">Deutsch</span> <span class="kbd">Svenska</span> <span class="kbd">English</span>.</p></div>
-      </div>
-    </div>
-    <div class="lang-panel" data-lang="en">
-      <span class="eyebrow">Official main website • Germany</span>
-      <h1>VORQ Group is the umbrella brand for digital projects.</h1>
-      <p class="lead">This website is a general company and project website. It is not a marketplace, payment service, seller of goods, or party to purchase contracts.</p>
-      <div class="hero-grid">
-        <div class="card safe"><h2>Clear legal separation</h2><p>Interactive projects such as classified-ad or marketplace platforms are legally separated and receive their own terms, privacy information and reporting procedures.</p></div>
-        <div class="card"><h2>Language selection is visible</h2><p>The language selector is at the top of every page: <span class="kbd">Deutsch</span> <span class="kbd">Svenska</span> <span class="kbd">English</span>.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container grid">
-    <article class="card"><h3>VORQ Fordon</h3><p class="muted">Future vehicle-related project. It must use separate legal documents when user accounts, listings or payments are activated.</p></article>
-    <article class="card"><h3>VORQ Blog</h3><p class="muted">Editorial or personal-content project. It must use its own editorial and privacy notices where appropriate.</p></article>
-    <article class="card"><h3>VORQ Group</h3><p class="muted">Umbrella brand and official contact point for company-level information.</p></article>
-  </div>
-</section>
-<section class="section">
-  <div class="container two">
-    <div class="card"><h2>Contact</h2><p><strong>Email:</strong> <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#111;&#114;&#113;&#46;&#103;&#114;&#111;&#117;&#112;">&#105;&#110;&#102;&#111;&#64;&#118;&#111;&#114;&#113;&#46;&#103;&#114;&#111;&#117;&#112;</a><br><strong>Phone:</strong> <a href="tel:+491783705133">+49 178 3705133</a><br><span class="muted">Telephone availability may be limited; email is recommended for written legal communication.</span></p></div>
-    <div class="card notice"><h2>Important legal limit</h2><p>No website text can remove mandatory statutory responsibility for intentional misconduct, gross negligence or legal obligations. Liability wording applies only as far as permitted by law.</p></div>
-  </div>
-</section>
 
+      <aside class="card hero-side">
+        <div class="lang lang-de">
+          <h2>Schneller Überblick</h2>
+          <p>Diese Website ist ein offizieller Unternehmensauftritt. Sie ist kein Marktplatz, keine Zahlungsplattform und verkauft keine Nutzerwaren.</p>
+          <div class="metric-grid">
+            <div class="metric"><strong>3</strong><span>Sprachen: DE • SV • EN</span></div>
+            <div class="metric"><strong>01.07.2026</strong><span>Beginn der Tätigkeit</span></div>
+            <div class="metric"><strong>§ 19 UStG</strong><span>Kleinunternehmerregelung</span></div>
+            <div class="metric"><strong>DE</strong><span>Standort: Wuppertal</span></div>
+          </div>
+        </div>
+        <div class="lang lang-sv">
+          <h2>Snabb översikt</h2>
+          <p>Denna webbplats är en officiell företagswebbplats. Den är inte en marknadsplats, inte en betalningsförmedlare och säljer inga användarvaror.</p>
+          <div class="metric-grid">
+            <div class="metric"><strong>3</strong><span>Språk: DE • SV • EN</span></div>
+            <div class="metric"><strong>2026-07-01</strong><span>Verksamhetsstart</span></div>
+            <div class="metric"><strong>§ 19 UStG</strong><span>Småföretagsregel</span></div>
+            <div class="metric"><strong>DE</strong><span>Plats: Wuppertal</span></div>
+          </div>
+        </div>
+        <div class="lang lang-en">
+          <h2>Quick overview</h2>
+          <p>This website is an official company website. It is not a marketplace, not a payment intermediary and does not sell user goods.</p>
+          <div class="metric-grid">
+            <div class="metric"><strong>3</strong><span>Languages: DE • SV • EN</span></div>
+            <div class="metric"><strong>01 Jul 2026</strong><span>Business start date</span></div>
+            <div class="metric"><strong>§ 19 UStG</strong><span>Small-business VAT rule</span></div>
+            <div class="metric"><strong>DE</strong><span>Location: Wuppertal</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="lang lang-de">
+          <div class="eyebrow">Offizielle Informationen</div>
+          <h2>Alles Wichtige in einer klaren Struktur</h2>
+          <p>Die Website wurde für eine professionelle Veröffentlichung optimiert: mit sichtigem Sprachwechsel, sauberer Navigation und rechtlichen Seiten, die auf Mobilgeräten gut lesbar sind.</p>
+        </div>
+        <div class="lang lang-sv">
+          <div class="eyebrow">Officiell information</div>
+          <h2>Allt viktigt i en tydlig struktur</h2>
+          <p>Webbplatsen är optimerad för professionell publicering: tydligt språkval, ren navigering och juridiska sidor som är lättlästa på mobilen.</p>
+        </div>
+        <div class="lang lang-en">
+          <div class="eyebrow">Official information</div>
+          <h2>Everything important in one clear structure</h2>
+          <p>The website is optimized for professional publication: visible language switching, clean navigation and legal pages that read well on mobile devices.</p>
+        </div>
+      </div>
+
+      <div class="grid-4">
+        <article class="card feature">
+          <div class="icon">01</div>
+          <div class="lang lang-de"><h3>Impressum</h3><p>Vollständige Anbieterkennzeichnung mit Name, Anschrift, Telefon, E-Mail und rechtlichem Status.</p></div>
+          <div class="lang lang-sv"><h3>Företagsinformation</h3><p>Fullständig företagsinformation med namn, adress, telefon, e-post och juridisk status.</p></div>
+          <div class="lang lang-en"><h3>Impressum</h3><p>Full provider identification with name, address, phone, email and legal status.</p></div>
+        </article>
+        <article class="card feature">
+          <div class="icon">02</div>
+          <div class="lang lang-de"><h3>Rechtliches</h3><p>Klare Beschreibung der rechtlichen Grenzen der Hauptwebsite und der Trennung zu künftigen Projekten.</p></div>
+          <div class="lang lang-sv"><h3>Juridik</h3><p>Tydlig beskrivning av den juridiska ramen för huvudwebbplatsen och separationen från framtida projekt.</p></div>
+          <div class="lang lang-en"><h3>Legal</h3><p>Clear description of the main website’s legal boundaries and the separation from future projects.</p></div>
+        </article>
+        <article class="card feature">
+          <div class="icon">03</div>
+          <div class="lang lang-de"><h3>Datenschutz</h3><p>Informationen zu Hosting, Server-Logs, Speicherdauer und Betroffenenrechten nach DSGVO.</p></div>
+          <div class="lang lang-sv"><h3>Integritet</h3><p>Information om hosting, serverloggar, lagringstid och registrerades rättigheter enligt GDPR.</p></div>
+          <div class="lang lang-en"><h3>Privacy</h3><p>Information on hosting, server logs, retention periods and data subject rights under GDPR.</p></div>
+        </article>
+        <article class="card feature">
+          <div class="icon">04</div>
+          <div class="lang lang-de"><h3>Nutzungsbedingungen</h3><p>Allgemeine Bedingungen für die Nutzung dieser Unternehmenswebsite und Hinweise zu Cookies.</p></div>
+          <div class="lang lang-sv"><h3>Användarvillkor</h3><p>Allmänna villkor för användning av denna företagswebbplats och information om cookies.</p></div>
+          <div class="lang lang-en"><h3>Terms</h3><p>General conditions for using this company website and information about cookies.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="quick-links">
+        <a class="quick-link" href="impressum.html">
+          <strong>Impressum</strong>
+          <span class="lang lang-de">Direkt zu den gesetzlich erforderlichen Anbieterinformationen.</span>
+          <span class="lang lang-sv">Direkt till den lagstadgade företagsinformationen.</span>
+          <span class="lang lang-en">Go directly to the legally required company details.</span>
+        </a>
+        <a class="quick-link" href="legal.html">
+          <strong>Legal</strong>
+          <span class="lang lang-de">Grenzen der Website, Haftung und Legal Sandbox.</span>
+          <span class="lang lang-sv">Webbplatsens gränser, ansvar och legal sandbox.</span>
+          <span class="lang lang-en">Website boundaries, liability and the legal sandbox approach.</span>
+        </a>
+        <a class="quick-link" href="privacy.html">
+          <strong>Privacy</strong>
+          <span class="lang lang-de">Hosting, Server-Logs, DSGVO-Rechte und Kontakt.</span>
+          <span class="lang lang-sv">Hosting, serverloggar, GDPR-rättigheter och kontakt.</span>
+          <span class="lang lang-en">Hosting, server logs, GDPR rights and contact.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3">
+      <article class="card highlight">
+        <div class="lang lang-de">
+          <h3>Unternehmen</h3>
+          <p><b>Haitham Kojar</b><br>nicht eingetragenes gewerbliches Einzelunternehmen<br>VORQ Group</p>
+        </div>
+        <div class="lang lang-sv">
+          <h3>Företag</h3>
+          <p><b>Haitham Kojar</b><br>enskild näringsverksamhet utan handelsregisterregistrering<br>VORQ Group</p>
+        </div>
+        <div class="lang lang-en">
+          <h3>Company</h3>
+          <p><b>Haitham Kojar</b><br>non-registered commercial sole proprietorship<br>VORQ Group</p>
+        </div>
+      </article>
+      <article class="card highlight">
+        <div class="lang lang-de"><h3>Kontakt</h3><p>Ziegelstraße 26<br>42289 Wuppertal<br>Deutschland<br><a href="mailto:info@vorq.group">info@vorq.group</a><br><a href="tel:+491783705133">+49 178 3705133</a></p></div>
+        <div class="lang lang-sv"><h3>Kontakt</h3><p>Ziegelstraße 26<br>42289 Wuppertal<br>Tyskland<br><a href="mailto:info@vorq.group">info@vorq.group</a><br><a href="tel:+491783705133">+49 178 3705133</a></p></div>
+        <div class="lang lang-en"><h3>Contact</h3><p>Ziegelstraße 26<br>42289 Wuppertal<br>Germany<br><a href="mailto:info@vorq.group">info@vorq.group</a><br><a href="tel:+491783705133">+49 178 3705133</a></p></div>
+      </article>
+      <article class="card highlight">
+        <div class="lang lang-de"><h3>Hinweis</h3><p>Diese Website stellt Unternehmensinformationen bereit. Interaktive Dienste oder eigenständige Plattformprojekte erhalten eigene rechtliche Dokumente.</p></div>
+        <div class="lang lang-sv"><h3>Notering</h3><p>Denna webbplats tillhandahåller företagsinformation. Interaktiva tjänster eller separata plattformsprojekt får egna juridiska dokument.</p></div>
+        <div class="lang lang-en"><h3>Notice</h3><p>This website provides company information. Interactive services or separate platform projects will receive their own legal documents.</p></div>
+      </article>
+    </div>
+  </section>
 </main>
+
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <strong>VORQ Group</strong><br>
-      Vision • Operations • Reach • Quality<br>
-      <span class="muted">Official umbrella website. Project platforms have their own legal pages.</span>
+      <div class="brand" style="margin-bottom:10px;">
+        <div class="brand-mark"><span>VQ</span></div>
+        <div class="brand-copy">
+          <div class="brand-title">VORQ Group</div>
+          <div class="brand-sub">Vision • Operations • Reach • Quality</div>
+        </div>
+      </div>
+      <p>
+        <span class="lang lang-de">Offizielle Website des in Deutschland geführten Einzelunternehmens.</span>
+        <span class="lang lang-sv">Officiell webbplats för den i Tyskland registrerade enskilda näringsverksamheten.</span>
+        <span class="lang lang-en">Official website of the German sole proprietorship.</span>
+      </p>
     </div>
-    <nav class="footer-links" aria-label="Footer navigation"><a href="./index.html" data-keep-lang aria-current="page">Start</a><a href="./impressum.html" data-keep-lang >Impressum / Företagsinformation</a><a href="./legal.html" data-keep-lang >Legal</a><a href="./privacy.html" data-keep-lang >Privacy</a><a href="./terms.html" data-keep-lang >Terms</a><a href="./cookie-policy.html" data-keep-lang >Cookies</a></nav>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="legal.html">Legal</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="cookie-policy.html">Cookies</a>
+    </div>
   </div>
 </footer>
-<script src="./assets/js/lang.js"></script>
+
+<script src="assets/script.js" defer></script>
 </body>
 </html>

@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2; url=./index.html">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Page not found | VORQ Group</title>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./assets/css/site.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(){
+      var lang='en';try{lang=localStorage.getItem('vorqLang')||'en';}catch(e){}
+      document.documentElement.setAttribute('data-lang',lang);
+      var base='/';
+      if(location.hostname.endsWith('github.io')){var p=location.pathname.split('/').filter(Boolean);base=p.length?('/'+p[0]+'/'):'/';document.write('<base href="'+base+'">');}
+      window.__vorqBase=base;
+    })();
+  </script>
+  <title>404 | VORQ Group</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <main class="hero">
-        <div class="container">
-            <a class="brand" href="./index.html" aria-label="VORQ Group start page">
-                <img src="./vorq-group-logo.svg" alt="VORQ Group">
-            </a>
-            <span class="eyebrow">404 • GitHub Pages fallback</span>
-            <h1>Page not found</h1>
-            <p class="lead">You are being redirected to the VORQ Group start page. If it does not open automatically, use the button below.</p>
-            <p><a class="cta" href="./index.html">Open start page</a></p>
-            <div class="card mt">
-                <h2>DE</h2>
-                <p>Die angeforderte Seite wurde nicht gefunden. Bitte öffnen Sie die Startseite.</p>
-                <h2>SV</h2>
-                <p>Sidan hittades inte. Öppna startsidan.</p>
-                <h2>EN</h2>
-                <p>The requested page was not found. Open the start page.</p>
-            </div>
-        </div>
-    </main>
+<main class="page-hero">
+  <div class="container center">
+    <div class="card error-card" style="max-width:860px; width:100%;">
+      <a class="brand" href="index.html" style="margin-bottom:16px;"><div class="brand-mark"><span>VQ</span></div><div class="brand-copy"><div class="brand-title">VORQ Group</div><div class="brand-sub">Vision • Operations • Reach • Quality</div></div></a>
+      <small class="code">GitHub Pages fallback • 404</small>
+      <div class="lang lang-de"><h1>Seite nicht gefunden</h1><p class="lead">Die angeforderte Seite konnte nicht gefunden werden. Sie werden automatisch zur Startseite weitergeleitet.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Zur Startseite</a><a class="btn btn-secondary" href="impressum.html">Zum Impressum</a></div></div>
+      <div class="lang lang-sv"><h1>Sidan hittades inte</h1><p class="lead">Den begärda sidan kunde inte hittas. Du skickas automatiskt vidare till startsidan.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Till startsidan</a><a class="btn btn-secondary" href="impressum.html">Till företagsinformation</a></div></div>
+      <div class="lang lang-en"><h1>Page not found</h1><p class="lead">The requested page could not be found. You are being redirected to the start page automatically.</p><div class="cta-row"><a class="btn btn-primary" href="index.html">Open start page</a><a class="btn btn-secondary" href="impressum.html">Open impressum</a></div></div>
+    </div>
+  </div>
+</main>
+<script src="assets/script.js" defer></script>
+<script>
+  setTimeout(function(){
+    var target=(window.__vorqBase||'/')+'index.html';
+    if(location.pathname.indexOf('index.html')===-1){ location.replace(target); }
+  },1800);
+</script>
 </body>
 </html>

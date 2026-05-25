@@ -20,3 +20,6 @@ a{color:inherit;text-decoration:none} a:hover{color:var(--orange)} .container{wi
 .project-card h3,.content-card h2,.highlight h3{font-size:1.12rem}
 .content-card h3{font-size:1rem;color:var(--navy);margin:16px 0 6px}
 .footer .brand{min-width:0}
+
+.status-live{border-color:rgba(16,185,129,.30);background:rgba(16,185,129,.10);color:#065f46}
+.status-beta{border-color:rgba(245,158,11,.35);background:rgba(245,158,11,.12);color:#7c2d12}

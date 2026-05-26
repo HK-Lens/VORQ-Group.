@@ -70,6 +70,9 @@
     .company-box{background:var(--vd-blue);color:#fff;border-radius:var(--vd-radius);box-shadow:0 22px 70px rgba(10,35,66,.16)}.company-box h2{margin:0 0 18px;color:#fff}.company-box dl{display:grid;grid-template-columns:minmax(130px,.38fr) 1fr;gap:10px 18px;margin:0}.company-box dt{color:#b9c9da;font-weight:800}.company-box dd{margin:0;color:#fff;line-height:1.55}.company-box a{color:#fff;text-underline-offset:3px}
     .legal-note{background:#fff;border:1px solid var(--vd-line);border-radius:var(--vd-radius)}.legal-note h2{margin:0 0 10px;color:var(--vd-blue)}.legal-note p{color:var(--vd-muted);line-height:1.65;margin:0 0 12px}.legal-note a{font-weight:900;text-decoration:none;color:var(--vd-blue)}
     .footer{border-top:1px solid var(--vd-line);background:#fff;padding:34px 0}.footer-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:22px;align-items:start}.footer p{color:var(--vd-muted);line-height:1.65;margin:12px 0 0;font-size:14px}.footer .small{font-size:12px}.footer-links{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+    .site-trial-notice{background:linear-gradient(90deg,#7f1d1d,#dc2626,#991b1b,#ef4444);background-size:240% 240%;animation:vorqTrialNotice 9s ease infinite;color:#fff;border-bottom:1px solid rgba(255,255,255,.22);box-shadow:0 10px 30px rgba(127,29,29,.18)}
+    .site-trial-notice .container{padding-top:10px;padding-bottom:10px;text-align:center;font-size:13px;font-weight:900;line-height:1.55}
+    @keyframes vorqTrialNotice{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
     .inline-lang,.lang{display:none}html[data-lang="de"] .lang-de,html[data-lang="sv"] .lang-sv,html[data-lang="en"] .lang-en{display:initial}html[data-lang="de"] div.lang-de,html[data-lang="sv"] div.lang-sv,html[data-lang="en"] div.lang-en{display:block}
     @media (max-width:980px){.hero-grid,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}.hero{padding-top:34px}.brand-logo{width:150px}.company-box dl{grid-template-columns:1fr}.company-box dt{margin-top:8px}}
     @media (max-width:860px){.header-inner{align-items:flex-start;padding:12px 0;flex-direction:column}.nav{display:none;width:100%;padding-top:8px;border-top:1px solid var(--vd-line)}.nav.open{display:flex}.header-tools{width:100%;justify-content:space-between}.menu-btn{display:inline-flex}.footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}.hero-logo{width:210px}}
@@ -94,6 +97,14 @@
     </div>
   </div>
 </header>
+
+<section class="site-trial-notice" aria-label="Website notice">
+  <div class="container">
+    <div class="lang lang-de">Hinweis: Diese Website befindet sich im Testbetrieb. Inhalte und Seiten können vor dem endgültigen Start noch geändert werden.</div>
+    <div class="lang lang-sv">Observera: Denna webbplats är i testdrift. Innehåll och sidor kan ändras före den slutliga lanseringen.</div>
+    <div class="lang lang-en">Notice: This website is currently in trial operation. Content and pages may change before the final launch.</div>
+  </div>
+</section>
 
 <main id="main">
   <section class="hero">
